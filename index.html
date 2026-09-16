@@ -1,0 +1,840 @@
+<!DOCTYPE HTML>
+<!--
+	Multiverse by HTML5 UP
+	html5up.net | @ajlkn and @AvinashSingh786
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>CS Project Day</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+	<meta property="og:site_name" content="CS@UP Project Day">
+	<meta property="og:title" content="CS@UP Project Day 2024" />
+	<meta property="og:tags" content="CS@UP" />
+	<meta property="og:description"
+		content="The University of Pretoria's final year Computer Science Projects landing page." />
+	<meta property="og:image" itemprop="image" content="https://cos301-se-2024.github.io/images/UP.png">
+	<meta property="og:type" content="website" />
+	<link rel="shortcut icon" href="https://www.cs.up.ac.za/images/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="https://www.cs.up.ac.za/images/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+</head>
+
+<body class="is-preload">
+	<!-- <h1 class="center">Please Note: Website under development</h1> -->
+	<img src="images/UP.png" width="350" class="up" />
+	<h1 class="center"> Department of Computer Science </h1>
+	<h1 class="center"> COS 301 Capstone Projects 2024</h1>
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+		<!-- Header -->
+		<header id="header">
+			<h1><a href="index.html"><strong>CS Project Day</strong> @UP</a></h1>
+			<nav>
+				<ul>
+					<li><a href="#schedule" class="icon solid fa-calendar">Schedule</a></li>
+					<li><a href="#sponsor" class="icon solid fa-trophy">Sponsor's</a></li>
+					<li><a href="#footer" class="icon solid fa-info-circle">About</a></li>
+				</ul>
+			</nav>
+		</header>
+
+	
+		<div id="template" style="display: none">
+			<article class="thumb">
+				<div class="owner"><br /><br />
+					<h2 data-toggle="tooltip" data-placement="left" title="" class="client_org">Product Owner: </h2>
+					<img src="#" alt="#" class="client" />
+				</div>
+				<a href="#" class="image logo_link">
+					<img src="#" alt="" class="logo" />
+		
+				</a>
+				
+				<br />
+				<h2> <span class="name"></span> <br />
+					By <span class="team"></span></h2>
+					<p class="chips"></p>
+				<p class="description">
+				</p>
+				<ul class="icons center margin-fix">
+					<li><a href="#" target="_blank" class="icon brands fa-github" data-toggle="tooltip"
+							data-placement="left" title="GitHub Link"><span class="label">GitHub
+								Repository</span></a></li>
+					<li><a href="#" target="_blank" class="icon solid fa-envelope" data-toggle="tooltip"
+							data-placement="left" title="Email"><span class="label">Email</span></a>
+					</li>
+					<li><a href="#" target="_blank" class="icon solid fa-globe-africa" data-toggle="tooltip"
+							data-placement="left" title="Website/Deployment Link"><span class="label">Website</span></a>
+					</li>
+					<li><a href="#" target="_blank" class="icon brands fa-youtube" data-toggle="tooltip"
+							data-placement="left" title="Video"><span class="label">Video</span></a>
+					</li>
+				</ul>
+			</article>
+
+		</div>
+
+		<!-- Main -->
+		<div id="main">
+		</div>
+
+		<section class="panel" id="schedule">
+			<h1>Schedule</h1>
+			<table class="table table-striped">
+				<thead class="thead-dark">
+					<tr>
+					<th scope="col" class="font-weight-bolder">Time</th>
+					<th scope="col" class="font-weight-bolder">Description</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th scope="row">07:30 - 08:30</th>
+						<td class="text-white">Setup (Teams & Sponsors)</td>
+					</tr>
+					<tr>
+						<th scope="row">9:00 - 9:05</th>
+						<td class="text-white">Event Opening (Prof Hein Venter)</td>
+					</tr>
+					<tr>
+						<th scope="row">9:05 - 12:00</th>
+						<td class="text-white">Project showcase and grading</td>
+					</tr>
+					<tr>
+						<th scope="row">12:00 - 12:15</th>
+						<td class="text-white">Announcement of prize winners</td>
+					</tr>
+					<tr>
+						<th scope="row">12:15 - 12:30</th>
+						<td class="text-white">Thank you to the sponsors</td>
+					</tr>
+					<tr>
+						<th scope="row">12:30 - 13:00</th>
+						<td class="text-white">Event closing (Prof Hein Venter)</td>
+					</tr>
+          <tr>
+						<th scope="row">13:00 - 13:30</th>
+						<td class="text-white">Class photo</td>
+					</tr>
+				</tbody>
+			</table>
+				
+				
+			<h1>Stands</h1>
+	
+			<table class="table table-striped">
+				<thead class="thead-dark">
+					<tr>
+						<th scope="col" class="font-weight-bolder">Team Name</th>
+						<th scope="col" class="font-weight-bolder">Project Title</th>
+						<th scope="col" class="font-weight-bolder">Stand Number</th>
+					</tr>
+				</thead>
+				
+				<tbody id="stands">
+					
+					<tr id="tempstand" style="display: none">
+						<th scope="row" class="team"></th>
+						<td class="text-white project"></td>
+						<td class="text-white standNum"></td>
+					</tr>
+			</tbody>
+			</table>
+			<img src="images/hall.png" alt="hall layout" class="img-thumbnail">
+		</section>
+
+		<section class="panel" id="sponsor">
+			<h1>Sponsor's</h1>
+			<h2 class="center">We would like to thank our Sponsors for this years prizes. Thank you for your continued
+				support.</h2>
+			<div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4">
+
+				<div class="card" style="width: 18rem;">
+					<div class="card-body">
+						<a href="https://entelect.co.za" target="_blank">
+							<img src="images/sponsors/entellect_3.png" class="card-img-top img-responsive" alt="...">
+						</a>
+						<div style="padding-top: 2em;">Software architecture refers to the high-level structures of a software system. Candidates for this prize should convince the judges that their system design is based on appropriate software architecture and design patterns to ensure compliance with the quality requirements of their system.</div>
+					</div>
+					<div class="card-footer">
+						<p class="card-text"><span><i class="icon solid fa-building"></i><br /> Architectural
+								Awareness</span></p>
+					</div>
+				</div>
+				<div class="card" style="width: 18rem;">
+					<div class="card-body">
+						<a href="https://epiuse.com/" target="_blank">
+							<img src="images/sponsors/epiuse.jpg" class="card-img-top img-responsive" alt="...">
+						</a>
+            <span>To qualify for this prize, the project should have a highly advanced, innovative, or pioneering aspect. You have to convince the judges of your exceptional innovation. The use of emerging technologies, i.e. Artificial Intelligence, Machine Learning, Blockchain, Virtual Reality, Augmented Reality, Cloud Native technology etc., will be advantageous.</span>
+					</div>
+					<div class="card-footer">
+						<p class="card-text">
+							<span><i class="icon solid fa-lightbulb"></i> <br />Innovation </span>
+						</p>
+					</div>
+				</div>
+				<div class="card" style="width: 18rem;">
+					<div class="card-body">
+						<a href="https://www.agilebridge.co.za/" target="_blank">
+							<img src="images/sponsors/agile.png" class="card-img-top img-responsive" alt="...">
+						</a>
+            <div>
+            <div style="padding-top: 3em;">The Agile process adoption should stand out for the following attributes:
+            <ul>
+              <li> Usage of personas </li>
+              <li> How their solution provides value</li>
+              <li> Agile project management tool usage</li>
+              <li> Good breakdown of epics and stories</li>
+              <li> Continuous updates to documentation</li>
+            </ul>
+          </div>
+          </div>
+					</div>
+					<div class="card-footer">
+						<p class="card-text"><span><i class="icon solid fa-dice"></i><br /> Agile Process Adoption
+							</span></p>
+					</div>
+				</div>
+				<div class="card" style="width: 18rem;">
+					<div class="card-body">
+						<a href="https://www.gew.co.za/" target="_blank">
+							<img src="images/sponsors/hensoldt.svg" class="card-img-top img-responsive" alt="...">
+						</a>
+            <div style="padding-top: 2em;">
+              <ul>
+              To qualify, the team should have a culture of software engineering excellence. This can be observed when evaluating:
+              <li>How they make things (coding standards, reviews, design patterns, etc.)</li>
+              <li>How they operate (planning, monitoring, data integrity, etc.)</li>
+              <li>How they function as a team (values, team structure, transparency, etc.)</li>
+              </ul>
+            </div>
+					</div>
+					<div class="card-footer">
+						<p class="card-text"><span><i class="icon solid fa-drafting-compass"></i><br /> Software
+								Engineering
+								Excellence </span></p>
+					</div>
+				</div>
+				<!-- <div class="card" style="width: 18rem;">
+					<div class="card-body">
+						<a href="https://www.kindle.co.za/" target="_blank">
+							<img src="images/sponsors/kindle.png" class="card-img-top img-responsive" alt="...">
+						</a>
+            <span>The 'Fit for purpose' prize will be awarded to the team that shows the best insight into the realworld problem domain and combines this knowledge with their technical skills to model and develop a software solution that accurately and efficiently addresses the real-world requirements, both functional and non-functional.</span>
+					</div>
+					<div class="card-footer">
+						<p class="card-text"><span><i class="icon solid fa-balance-scale"></i><br /> Fit for Purpose
+							</span>
+						</p>
+					</div>
+				</div> -->
+        <div class="card" style="width: 18rem;">
+					<div class="card-body">
+						<a href="https://derivco.co.za/locations/south-africa/pretoria/" target="_blank">
+							<img src="images/sponsors/derivco.jpg" class="card-img-top img-responsive" alt="...">
+						</a>
+            <span>The most innovative and creative use of data in a teams software system observing the current state of the art in finding the best ways to enhance the use of data in their system.</span>
+					</div>
+					<div class="card-footer">
+						<p class="card-text"><span><i class="icon solid fa-balance-scale"></i><br /> Data Science: Most innovate use of Data
+							</span>
+						</p>
+					</div>
+				</div>
+        <div class="card" style="width: 18rem;">
+					<div class="card-body">
+						<a href="https://www.naked.insure/" target="_blank">
+							<img src="images/sponsors/naked-2.jpg" class="card-img-top img-responsive" alt="...">
+						</a>
+            <span>The team that best adheres to the principles surrounding cyber security. While the software system is sound and resilient to common threats, the team goes above and beyond to show their system is secure using modern techniques and uses intuitive understanding in writing their code securely.</span>
+					</div>
+					<div class="card-footer">
+						<p class="card-text"><span><i class="icon solid fa-lock"></i><br />Cyber & Information Security Award
+							</span>
+						</p>
+					</div>
+				</div>
+				<div class="card" style="width: 18rem;">
+					<div class="card-body">
+						<a href="https://ex-mente.com/" target="_blank">
+							<img src="images/sponsors/exmente2.jpg" class="card-img-top img-responsive" alt="..." />
+						</a>
+            <span>Algorithms forms the underpinnings of computer science. It is about designing correct, efficient and implementable algorithms for real-world problems. This prize will be awarded to the team who applied the most brilliant algorithmic ideas to address scalability and efficiency issues</span>
+					</div>
+					<div class="card-footer">
+						<p class="card-text"><span><i class="icon solid fa-paper-plane"></i> <br />Algorithmic innovation
+							</span></p>
+					</div>
+				</div>
+        <div class="card" style="width: 18rem;">
+					<div class="card-body">
+						<a href="https://www.gendac.co.za/" target="_blank">
+							<img src="images/sponsors/gendac.png" class="card-img-top img-responsive" alt="..." />
+						</a>
+            <ul>
+              <li>Mutual Support</li>
+              <li>Effective Communications and Collaboration</li>
+              <li>Balanced Contributions</li>
+              <li>Feedback and Continuous Improvement</li>
+              <li>Resilience</li>
+            </ul>
+					</div>
+					<div class="card-footer">
+						<p class="card-text"><span><i class="icon solid fa-users"></i> <br />Team-Work Excellence
+							</span></p>
+					</div>
+				</div>
+        <div class="card" style="width: 18rem;">
+					<div class="card-body">
+						<a href="https://www.southerncross.solutions/" target="_blank">
+							<img src="images/sponsors/scs_logo.png" class="card-img-top img-responsive" alt="..." />
+						</a>
+            <ul>
+              <li>Attention to Non Functional requirements</li>
+              <li>Usage of CI/CD and tools within the pipeline(s)</li>
+              <li>Applying Observability Principles</li>
+              <li>Operational Practices used</li>
+            </ul>
+					</div>
+					<div class="card-footer">
+						<p class="card-text"><span><i class="icon solid fa-terminal"></i> <br />DevOps Adherence
+							</span></p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<!-- Footer -->
+		<footer id="footer" class="panel">
+			<div class="inner split">
+				<div>
+					<section>
+						<img src="images/UP.png" width="250"/>
+						<h2>Computer Science Project Day</h2>
+						<p>Software Engineering (SE), COS 301 is a final year module for Computer Science students at the University of Pretoria. The module's presentation integrates subject matter in a very ‘hands-on’ way. Students are expected to design and implement a software system as a project tackled by a team of four to five members. The module covers a range of SE concepts, tools, techniques and skills, team skills and competencies. Usually, a software development process's primary goal is to deliver a high-quality, reliable, innovative and cost-efficient software product. However, our educational scenario's primary goal is to teach software development and engineering. The delivery of a quality product becomes a criterion for measuring acquired proficiency.</p>
+					</section>
+				</div>
+				<div>
+					<section>
+						<h2>Get in touch</h2>
+						<div>
+							<p>Ms. Stacey Baror (<a
+									href="mailto:stacey.baror@cs.up.ac.za?subject=Project Day 2021">stacey.baror@cs.up.ac.za</a>)
+							</p>
+							
+						</div>
+					</section>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.poptrox.min.js"></script>
+
+	<script>
+		var org = "COS301-SE-2024";
+
+		var projects = [
+  {
+    "no": 1,
+    "pName": "WorkWise Central",
+    "teamName": "Boolean Hooligans",
+    "projectWebsite": "https://tuksui.sharpsoftwaresolutions.net/",
+    "mentorOrg": "sss",
+    "shortDesc": "WorkWise Central is a cutting-edge PWA that transforms service-delivery businesses by streamlining operations, optimizing resource use, and enhancing customer satisfaction. It enables businesses to concentrate on service delivery with a comprehensive management solution tailored to their needs.",
+    "longDesc": "WorkWise Central is an all-encompassing management tool designed specifically for service-delivery businesses of any size and structure. It serves as a comprehensive solution that equips companies with the tools needed to efficiently manage every aspect of their operations. The platform includes robust features for managing clients, employees, and job assignments, as well as a real-time inventory management system. With a user-first design, WorkWise Central seamlessly integrates with daily business activities, providing the organizational structure necessary to ensure exceptional service delivery and optimize overall performance.",
+    "gLink": "https://github.com/COS301-SE-2024/WorkWise-Central",
+    "email": "booleanhooligans100@gmail.com",
+    "tags": ["user-friendly", "user-first-design", "service-oriented", "management tool", "resource optimization", "customer satisfaction", "task management", "resource management", "Progressive Web App (PWA)"]
+  },
+  {
+    "no": 2,
+    "pName": "Extended Planning Instrument For Unpredictable Spaces and Environments",
+    "teamName": "Janeeb Solutions",
+    "projectWebsite": "https://janeebsolutions.co.za/",
+    "mentorOrg": "labs",
+    "shortDesc": "Our logistics optimization system harnesses a dynamic algorithms and machine learning model to optimize package placement and efficiency in logistics vehicles. This comprehensive solution addresses the unique needs of goods placement, ensuring enhanced performance, space utilization and optimal time efficiency.",
+    "longDesc": "Our project aims to revolutionize South Africa's logistics sector, which annually moves 1.5 billion tonnes of goods and contributes 10% to the GDP, by tackling inefficiencies in truck space utilization. This comprehensive system features a dynamic packing algorithm for real-time goods placement adjustment, a machine learning model for continuous performance enhancement, a user-friendly manager interface for customized packing solutions, a real-time dashboard for monitoring and decision-making, and a visual simulation tool to demonstrate the algorithm's effectiveness. By optimizing space utilization, the project proposes cost savings, improved profitability, and reduced environmental impact, transforming inefficiency into precision.",
+    "gLink": "https://github.com/COS301-SE-2024/Extended-Planning-Instrument-for-Unpredictable-Spaces-and-Environments",
+    "email": "janeeb.solutions@gmail.com",
+    "tags": ["AI", "Genetic-Algorithm", "logistics", "optimization", "space-management", "transportation", "efficiency", "real-time", "dynamic-algorithms", "cost-saving", "user-friendly", "dashboard", "simulation", "scalability", "performance", "profitability", "automation", "supply-chain"]
+  },
+  {
+    "no": 3,
+    "pName": "Dispute Resolution Engine",
+    "teamName": "Techtonic",
+    "projectWebsite": "https://capstone-dre.dns.net.za/",
+    "mentorOrg": "dns",
+    "shortDesc": "Facilitating & streamlining the dispute resolution process with automated workflows & NLP enhancements.",
+    "longDesc": "Alternate Dispute Resolution (ADR) provides a way for parties to negotiate a dispute without needing to involve the judicial system. Conventional litigation processes are costly and time-consuming and can differ significantly across different companies and domains. By automating the processes involved, using custom workflow generation and NLP enhancements, the Dispute Resolution Engine aims to drastically increase the speed and cost-effectiveness of ADR.",
+    "gLink": "https://github.com/COS301-SE-2024/Dispute-Resolution-Engine",
+    "email": "the.techtonic.team@gmail.com",
+    "tags": ["AI", "machine learning", "automation", "NLP", "dispute resolution", "ADR", "judicial system", "cost-effective", "efficiency", "custom workflows", "legal technology", "legal tech", "workflow generation", "service-oriented", "innovative", "legal automation", "time-saving", "user-friendly", "process optimization"]
+  },
+  {
+    "no": 4,
+    "pName": "The Republic",
+    "teamName": "Infinite Loopers",
+    "projectWebsite": "https://the-republic.co.za/about",
+    "mentorOrg": "epi",
+    "shortDesc": "X meets Eskom Se Push. This platform gives user an opportunity to voice out their concerns with governmental services in their community.",
+    "longDesc": "This web app isn’t only a venting space but it also allows users to visualize the data collected from the different issues posted by others. This gives an overview of the government in the country.",
+    "gLink": "https://github.com/COS301-SE-2024/The-Republic",
+    "email": "Inifiniteloopers@gmail.com",
+    "tags": ["Progressive Web App (PWA)", "Data Science", "Data Visualization", "Data Processing", "3D Visualization", "Open Source", "Public Service Monitoring"]
+  },
+  {
+    "no": 5,
+    "pName": "ClassConnect",
+    "teamName": "Phantom Works",
+    "projectWebsite": "https://www.class-connect.online/",
+    "mentorOrg": "labs",
+    "shortDesc": "ClassConnect is an innovative educational platform that leverages 3D environments and advanced rendering technologies to transform traditional learning into an immersive, interactive experience. By enabling lecturers to teach with 3D models and annotations in real-time, students can engage with course material from any device, redefining the boundaries of the classroom.",
+    "longDesc": "ClassConnect is a cutting-edge educational platform designed to create immersive learning experiences through a 3D virtual environment. Utilising technologies such as Threlte, the platform allows lecturers to present lessons with interactive 3D models and annotations, enabling students to engage with the material in real-time from any device with a browser. The project addresses the growing need for decentralised and innovative learning methods, transforming the traditional classroom into a dynamic space where education can occur anytime, anywhere. With features like lesson scheduling, 3D model manipulation, and real-time collaboration, ClassConnect aims to enhance the educational experience for both students and educators.",
+    "gLink": "https://github.com/COS301-SE-2024/ClassConnect",
+    "email": "phantomworks.capstone@gmail.com",
+    "tags": ["education", "3D", "virtual-environment", "interactive-learning", "real-time-collaboration", "browser-based", "decentralised-learning", "augmented reality", "innovative-teaching", "immersive-experience", "user-friendly", "service-oriented", "layered architecture", "flux", "peer-to-peer", "user-first-design", "Threlte", "SvelteKit", "Bun"]
+  },
+  {
+    "no": 6,
+    "pName": "MyCity",
+    "teamName": "LAN Lords",
+    "projectWebsite": "https://www.mycity.net.za/",
+    "mentorOrg": "labs",
+    "shortDesc": "MyCity is a progressive web application connecting citizens, municipalities, and service providers to swiftly report and resolve city infrastructure issues through a seamless ticketing and bidding system.",
+    "longDesc": "MyCity is a progressive web application designed to revolutionize public infrastructure management. It offers a unified platform where citizens can easily report issues, which are then assigned to the appropriate municipality based on location. These issues are converted into tickets that service providers can bid on, promoting competitive pricing and job creation. Municipalities choose the best bid, ensuring efficient resolution of problems. Once the work is completed, tickets are closed, leading to a better-maintained city. MyCity not only streamlines the process but also fosters collaboration between public and private sectors for a more responsive and improved environment.",
+    "gLink": "https://github.com/COS301-SE-2024/MyCity",
+    "email": "lanlords.capstone@gmail.com",
+    "tags": ["Progressive-Web-App", "Cloud", "User-friendly", "Ticketing-system", "Infrastructure-management", "Location-based", "Municipal-services", "Public-private-collaboration", "Issue-reporting", "Efficient-resolution", "Offline-capabilities", "Community-engagement"]
+  },
+  {
+    "no": 7,
+    "pName": "Culinary Companion",
+    "teamName": "TeckTonic",
+    "projectWebsite": "https://culinary-companion-capstone.netlify.app",
+    "mentorOrg": "labs",
+    "shortDesc": "Culinary Companion is a Progressive Web App (PWA) designed to elevate your cooking experience, offering personalised guidance for novice cooks, dietary-restricted users, and adventurous chefs. The app leverages user preferences and dietary needs to provide tailored recipes and ingredient alternatives.",
+    "longDesc": "Culinary Companion is an innovative Progressive Web App (PWA) that transforms the cooking experience by providing personalised cooking guidance and ingredient substitutions tailored to the needs of diverse user groups. Whether you're a novice cook, someone with dietary restrictions, or an adventurous culinary explorer, Culinary Companion adapts to your preferences and requirements. The app features a user-friendly interface, real-time ingredient recognition, and dynamic recipe suggestions. It integrates with a comprehensive database to offer a wide range of culinary solutions, making cooking accessible, enjoyable, and customised for everyone.",
+    "gLink": "https://github.com/COS301-SE-2024/Culinary-Companion",
+    "email": "TeckTonic.Capstone@gmail.com",
+    "tags": ["Progressive Web App (PWA)", "personalised cooking guidance", "ingredient substitutions", "novice cooks", "dietary-restricted users", "tailored recipes", "user preferences", "dietary needs", "real-time ingredient recognition", "dynamic recipe suggestions", "user-friendly interface", "comprehensive database", "culinary solutions", "cooking experience", "accessible cooking", "enjoyable cooking", "customised recipes", "AI", "neural-networks", "user-first-design", "cooking", "automation", "LLM-integrations", "service-oriented", "event-driven", "Cross-platform", "Accessibility", "Preferences", "Innovation", "Exploration"]
+  },
+  {
+    "no": 8,
+    "pName": "Smart Parking System (ParkMe)",
+    "teamName": "DaVinci Code",
+    "projectWebsite": "https://parkme-kappa.vercel.app/",
+    "mentorOrg": "epi",
+    "shortDesc": "The Smart Parking System, a groundbreaking solution that transforms the parking experience. Our system provides real-time information on available parking bays, ensuring you find a spot quickly and effortlessly through machine learning.",
+    "longDesc": "Finding parking on a daily basis is a significant hassle for drivers. Precious time, fuel, and patience are often wasted in the frustrating search for an available spot. We proudly introduce, The Smart Parking System, a groundbreaking solution that transforms the parking experience. Our system provides real-time information on available parking bays, ensuring you find a spot quickly and effortlessly. Additionally, users can book parking slots in advance, securing their preferred spots and eliminating the stress of searching for parking. This innovative system enhances convenience and efficiency, making parking a seamless part of your day.",
+    "gLink": "https://github.com/COS301-SE-2024/Smart-Parking-System",
+    "email": "davincicode.capstone@gmail.com",
+    "tags": ["IoT", "mobile", "web", "machine-learning", "cloud", "user-friendly", "real-time", "environment-friendly", "efficiency", "scalability", "reliability", "accessibility", "seamless-integration", "smart-city", "intuitive-interface"]
+  },
+  {
+    "no": 9,
+    "pName": "AI Crop Prediction System",
+    "teamName": "GeekGurusUnion",
+    "projectWebsite": "https://terrabyte.software/",
+    "mentorOrg": "epi",
+    "shortDesc": "The AI-Driven Crop Prediction System that applies Machine Learning and AI to analyze weather, soil, and crop data to predict crop health and yield. This system provides farmers with precise predictions, empowering them to make data-driven decisions and enhance their farming practices.",
+    "longDesc": "The AI Crop Prediction System aims to revolutionise the South African farming industry by transforming inefficiency into a well-oiled machine of precision. In essence, Crop Prediction seeks to bridge the gap between the present state of farming and a future where crop yielding can be done in a risk-free manner. Here's how we will achieve this: Data Collection: Weather, soil quality, crop variety, and historical yield data are collected to feed the AI model. Machine Learning Model: This AI model analyses the data to predict future crop health and yield with exceptional accuracy. User-Friendly Interface & Backend: Farmers input farm data and view predictions through a user-friendly interface. A robust backend system and database manage data processing and storage. Continuously Learning Model: The AI model is trained on historical data and can be updated with new information for ongoing improvement. The AI Crop Prediction represents a significant leap forward in agricultural technology for South Africa. By harnessing the power of AI, Crop Prediction empowers farmers to make data-driven decisions, minimise risk, and achieve greater efficiency and profitability.",
+    "gLink": "https://github.com/COS301-SE-2024/Crop-Prediction-System",
+    "email": "ggu.capsonte@gmail.com",
+    "tags": ["Crop-Prediction", "AI", "Machine-Learning", "Data-Collection"]
+  },
+  {
+    "no": 10,
+    "pName": "GameOnConnect",
+    "teamName": "Byte Squad",
+    "projectWebsite": "https://github.com/COS301-SE-2024/GameOnConnect/releases/tag/Version_23",
+    "mentorOrg": "epi",
+    "shortDesc": "GameOnConnect is an all encompassing social media platform for video game enthusiasts to explore new games and connect with one another. It provides insights into your gaming activity and allows interactive opportunities through tournaments and gaming sessions.",
+    "longDesc": "GameOnConnect is your one-stop-shop as a gamer. By downloading GameOnConnect you unlock the ability to discover new games and connect with friends on a whole new level! Can’t find friends to play with you? We’ve got you covered. Schedule or join public gaming sessions. Struggling to find a new game? We can show you many more to try in your favourite genres! Want to test your skills ? Schedule tournaments and battle it out! Curious about your gaming habits? View your personalized statistics based on your recorded gaming activity.",
+    "gLink": "https://github.com/COS301-SE-2024/GameOnConnect",
+    "email": "bytesquad.capstone@gmail.com",
+    "tags": ["gaming", "social media", "collaboration", "user friendly", "interactive", "android", "competitive", "exploration", "connect", "events", "games", "messaging", "tournaments", "leader board", "gaming sessions", "gaming stats"]
+  },
+  {
+    "no": 11,
+    "pName": "TailWaggr",
+    "teamName": "The Argonauts",
+    "projectWebsite": "https://tailwaggr.web.app",
+    "mentorOrg": "epi",
+    "shortDesc": "Unleash the fun with TailWaggr, the ultimate pet-centric social media app! Share adorable moments, connect with fellow pet lovers, and find trusted vets nearby—all in one pawsome place.",
+    "longDesc": "TailWaggr is a social platform designed to enhance the welfare of pets and the connectivity of their owners. TailWaggr offers a way for pet owners to create profiles for themselves and their beloved pets, fostering a sense of community and companionship within the pet-loving community. With features like Find a Veterinarian and Find a Pet Keeper, users can easily locate trusted professionals to care for their furry companions.",
+    "gLink": "https://github.com/COS301-SE-2024/TailWaggr",
+    "email": "argonauts004@gmail.com",
+    "tags": ["social-media", "user-friendly", "user-first-design", "pets", "animal-care", "pet-health"]
+  },
+  {
+    "no": 12,
+    "pName": "CoVAR",
+    "teamName": "Astro",
+    "projectWebsite": "https://covar.co.za/",
+    "mentorOrg": "bitm",
+    "shortDesc": "Integrate findings from multiple vulnerability scanners. COVAR will provide a unified view of an organization's security posture, enabling clients to identify and mitigate potential risks more efficiently.",
+    "longDesc": "The CoVAR project by bitm aims to develop a comprehensive vulnerability assessment and reporting tool designed to consolidate and analyse data from various cybersecurity assessment tools. By integrating findings from multiple vulnerability scanners, COVAR will provide a unified view of an organization's security posture, enabling clients to identify and mitigate potential risks more efficiently. Clients will be able to view their uploaded reports in different formats depending on the user's role. It will also allow a secure vulnerability comparison to peers in the industry.",
+    "gLink": "https://github.com/COS301-SE-2024/CoVAR",
+    "email": "astroteam.capstone@gmail.com",
+    "tags": ["cybersecurity", "vulnerability-assessment", "reporting-tool", "peer-comparison"]
+  },
+  {
+    "no": 13,
+    "pName": "IoTDirfram",
+    "teamName": "Code Crafters",
+    "projectWebsite": "http://165.227.161.136:3000",
+    "mentorOrg": "bitm",
+    "shortDesc": "The project aims to hack firmware and chip model info from IoT devices using a raspberry pi, as well as obtaining real-time voltage info of said devices when connected via USB or UART.",
+    "longDesc": "Developing software for a Raspberry Pi that automatically executes when connected via USB or UART to retrieve information from an IoT device. The software will gather details such as firmware version, chip model, and voltage usage, compiling them into an XML format. This information can be stored onboard the Raspberry Pi or transmitted to another system for analysis.",
+    "gLink": "https://github.com/COS301-SE-2024/IoT-DIRfram",
+    "email": "codecrafters2024.capstone@gmail.com",
+    "tags": ["hardware", "security", "security-based", "hacking", "event-driven", "real-time analysis"]
+  },
+  {
+    "no": 14,
+    "pName": "GDPR Data Noncompliance Detector",
+    "teamName": "AprilFour",
+    "projectWebsite": "https://gnd-admin.vercel.app/",
+    "mentorOrg": "deloitte",
+    "shortDesc": "GND, a robust GDPR detection system utilizing advanced AI algorithms to identify and analyze documents for potential GDPR violations, ensuring compliance and protecting user privacy.",
+    "longDesc": "GND is a cutting-edge GDPR detection system designed to help organizations ensure compliance with data protection regulations. Leveraging advanced AI algorithms, GND meticulously scans and analyzes documents to identify potential GDPR violations. By automating the detection process, it delivers efficient and accurate results, significantly reducing the manual effort required for compliance checks. This not only enhances the reliability of the compliance process but also saves valuable time and resources. Additionally, GND provides detailed reports and actionable insights, empowering organizations to address compliance issues proactively and maintain robust data protection standards.",
+    "gLink": "https://github.com/COS301-SE-2024/GDPR-data-noncompliance-detector",
+    "email": "aprilfour301@gmail.com",
+    "tags": "GDPR, Compliance, Data-Protection, AI, Automation, Document-Analysis, Privacy-Protection, Compliance-Tool, Data, Data-Security, Regulation, Regulation-Compliance, AI, AI-powered, Risk, Risk-Management, Machine-Learning, Efficiency, Accuracy, Compliance-reports, Reporting, OCR, ML, Artificial-Intelligence, Personal-information, Personal-data, Protection, EU, LLM-integrations"
+  },
+  {
+    "no": 15,
+    "pName": "BeakPeek",
+    "teamName": "Millennium",
+    "projectWebsite": "https://beakpeekuserapi.azurewebsites.net",
+    "mentorOrg": "agb",
+    "shortDesc": "BeakPeek makes birding as easy as fly! BeakPeek helps with all your birding needs, like generating heat maps of any Southern African bird and letting you complete fun quizzes to expand your birding knowledge!",
+    "longDesc": "BeakPeek strives to make birding as easy as possible. Allowing users access to all features required for birding while completely offline. We also have features made for conservationists, allowing them to mark down the location of nests and to track specific birds by their tags. Birders also gain access to a leveling system where you get to compete with your friends by earning experience points through bird sightings or quiz completions!",
+    "gLink": "https://github.com/COS301-SE-2024/BeakPeek",
+    "email": "millennium.capstone@gmail.com",
+    "tags": "birding,conservation,heat-map,user-first-design,responsive"
+  },
+  {
+    "no": 16,
+    "pName": "ABC Travel Planner",
+    "teamName": "Tech Titans",
+    "projectWebsite": "https://abctravelplanner-8a6f6247b848.herokuapp.com/",
+    "mentorOrg": "epi",
+    "shortDesc": "The ABC Travel Planner is a comprehensive platform that integrates international flights, accommodation, and activities for personalized itineraries. It offers social media features that allow travelers to share and view others' experiences.",
+    "longDesc": "The ABC Travel Planner is a comprehensive software system designed to streamline travel planning by integrating flights, accommodations, and activities into a single, user-friendly platform focused on itinerary building. Users can search for destinations, access detailed information including images, reviews, and activities, and create personalized itineraries. The platform emphasizes a social media experience where travelers can share their itineraries, comment, and like others' posts. User data is securely stored, linked to individual profiles for easy access to past itineraries, and managed through an integrated admin system to ensure the platform remains up-to-date and user-friendly.",
+    "gLink": "https://github.com/COS301-SE-2024/ABC-Travel-Planner",
+    "email": "techtitans.capstone@gmail.com",
+    "tags": "user-friendly, user-first-design, AI, service-orientated, travel, social media, itinerary building"
+  },
+  {
+    "no": 17,
+    "pName": "Smart Inventory",
+    "teamName": "Helix",
+    "projectWebsite": "https://main.dxgjrxhqoh4ot.amplifyapp.com/",
+    "mentorOrg": "aws",
+    "shortDesc": "The Smart Inventory System not only tracks and organizes your stock, but also automates reordering based on real-time data, ensuring you never run out and avoid excessive storage costs.",
+    "longDesc": "Take control of your stock with Smart Inventory, a user-friendly web-based application that streamlines and automates core inventory processes. Gain real-time visibility into your stock levels, eliminate stockouts, and ensure smooth operations.  Smart Inventory empowers users at all levels, from business owners who can make data-driven decisions with insightful reports to employees who can simplify ordering with automated suggestions and manage stock movements with ease.  This comprehensive solution caters to various user roles and includes features like user-friendly interface, role-based access control, automated reordering, supplier management, and more, making Smart Inventory your one-stop shop for efficient inventory management.",
+    "gLink": "https://github.com/COS301-SE-2024/Smart-Inventory",
+    "email": "helixcapstone@gmail.com",
+    "tags": "Automation, Machine Learning, Inventory Management, Reporting, Data-driven, Supplier management, Business management, user-friendly"
+  },
+  {
+    "no": 18,
+    "pName": "Lookout",
+    "teamName": "Team SEGFAULT",
+    "projectWebsite": "https://lookoutcapstone.xyz/",
+    "mentorOrg": "labs",
+    "shortDesc": "Lookout is a modern, user-friendly web application that revolutionises how nature enthusiasts, conservationists and hikers interact with and share information about their experiences in the outdoors.",
+    "longDesc": "Lookout is a pioneering Progressive Web App (PWA) crafted to elevate the animal spotting experience for nature enthusiasts. This state-of-the-art platform enables users to effortlessly record and share their animal sightings while fostering a global community. By combining social interaction with intuitive functionality, Lookout transforms the animal spotting journey into a more engaging, interactive, and rewarding adventure.",
+    "gLink": "https://github.com/COS301-SE-2024/Lookout",
+    "email": "team.segfault.capstone@gmail.com",
+    "tags": "nature, animal-spotting, Progressive-Web-App, social-interaction, geo-tagging, community-driven, service-oriented, layered, model-view-controller, user-friendly, innovative, real-time-sharing, offline functionality, wildlife, mobile-friendly"
+  },
+  {
+    "no": 19,
+    "pName": "Web Exploration Engine",
+    "teamName": "Tech Odyssey",
+    "projectWebsite": "https://capstone-wee.dns.net.za/",
+    "mentorOrg": "dns",
+    "shortDesc": "The Web Exploration Engine (WEE) automates the extraction of critical website information, delivering user-friendly insights and actionable data. It helps users enhance their websites' performance and user experience through data-driven decisions.",
+    "longDesc": "The Web Exploration Engine (WEE) is an advanced web scraping and analysis platform designed to automate the extraction of critical information from websites. Leveraging cutting-edge scraping technologies and natural language processing (NLP) algorithms, WEE provides comprehensive insights and actionable data through an intuitive and responsive user interface. The platform empowers users to identify strengths, weaknesses, and opportunities for improvement in their websites, enhancing overall performance and user experience.",
+    "gLink": "https://github.com/COS301-SE-2024/Web-Exploration-Engine",
+    "email": "techodyssey.capstone@gmail.com",
+    "tags": "Web Scraping, Website Analysis, Information Extraction, Natural Language Processing, Sentiment Analysis, Automation, Responsive Design, Website Monitoring, Comprehensive Reporting"
+  },
+  {
+    "no": 20,
+    "pName": "WriteMe",
+    "teamName": "Dynasty Devs",
+    "projectWebsite": "https://writeme.co.za",
+    "mentorOrg": "labs",
+    "shortDesc": "WriteMe revolutionizes collaborative writing with cutting-edge NLP tools to enhance storytelling, character development, and emotional impact. Think GitHub for writers—share, create, and enjoy stories with a supportive community, transforming the writing experience.",
+    "longDesc": "WriteMe is a revolutionary platform for collaborative writing. Using Natural Language Processing, it offers tools to enhance narrative structures, character development, and emotional impact. Like GitHub for writers, users can share, create, and enjoy stories with community support, transforming writing into a collaborative experience.",
+    "gLink": "https://github.com/COS301-SE-2024/WriteMe",
+    "email": "hi@dynasty-devs.com",
+    "tags": "nlp, pwa, AI, writing, blogging"
+  },
+  {
+    "no": 21,
+    "pName": "Amplify",
+    "teamName": "Isidore",
+    "projectWebsite": "https://www.amplify.org.za/",
+    "mentorOrg": "labs",
+    "shortDesc": "A cutting-edge simulation platform, designed to transform the way we manage energy, as well as optimize grid operations.",
+    "longDesc": "Amplify consists out of three primary components. The market platform allows users to buy and sell electricity on a free market. Price on this platform will be dynamically updated to balance supply and demand and ensure grid stability. The market platform will also show historical data to allow users to make informed decisions. A scientifically accurate simulation of an electrical grid is in place to test the market platform on. Lastly a system to mock user agents for large scale testing of the platform.",
+    "gLink": "https://github.com/COS301-SE-2024/Open-Electricity-Market",
+    "email": "isidore.capstone@gmail.com",
+    "tags": "service-oriented, user-friendly, physical simulation, parallelism, free-market"
+  },
+  {
+    "no": 22,
+    "pName": "Occupi",
+    "teamName": "Y2Kode",
+    "projectWebsite": "https://occupi.framer.ai/",
+    "mentorOrg": "deloitte",
+    "shortDesc": "Occupi is an office capacity predictor application that gives employees and managers office occupancy predictions based on past occupancy data. The app also provides room management including creating and managing office room bookings.",
+    "longDesc": "The Occupi Office Capacity Prediction system revolutionizes office space management by utilizing advanced machine learning algorithms and predictive models. It effectively addresses the challenges of managing office occupancy by providing real-time updates on current capacity and predicting future trends. By leveraging historical data alongside real-time inputs, the system empowers office managers to make informed decisions about space utilization, enhancing both immediate and long-term planning. Employees and visitors benefit from real-time capacity status updates, while office managers and owners gain access to detailed future occupancy predictions, enabling optimised space usage and improved operational efficiency. In addition to occupancy predictions, the Occupi system includes a comprehensive room management feature, allowing employees to create and manage room bookings seamlessly. Our system also boasts a high level of security, integrating robust database protections, firewall services, Cloudflare for enhanced security and performance, and a CDN for fast and reliable content delivery. Our web interface is highly customisable, allowing office managers to tailor the user experience to fit their unique organisational needs. As Y2Kode, we have developed this innovative solution using a mobile application, as well as a web application, and a desktop application for providing managerial services and delivering more detailed predictive outputs. By continuously refining our predictive models, the Occupi system introduces a dynamic, data-driven approach to office capacity management that benefits daily users and enhances overall office operations.",
+    "gLink": "https://github.com/COS301-SE-2024/occupi",
+    "email": "y2kode.labs@gmail.com",
+    "tags": "AI, Real-Time Processing, Machine Learning, Cloud Computing, Cross-platform, Mobile, Web, Desktop"
+  },
+  {
+    "no": 23,
+    "pName": "WhatsOn@UP",
+    "teamName": "DevForce",
+    "projectWebsite": "https://cos301-se-2024.github.io/WhatsOn-UP/",
+    "mentorOrg": "labs",
+    "shortDesc": "WhatsOn@UP is a central hub for university events, providing a centralized platform for students and guests to easily find and manage events.",
+    "longDesc": "Students often miss out on enriching experiences outside of academics due to the difficulty of finding and managing various campus events. Current methods rely on scattered sources, making it challenging for students and university guests to stay informed and involved. The WhatsOn@UP system is a central hub for managing events. Imagine a centralised hub where all university events are readily discoverable. Students and guests can effortlessly browse public events or search for specific interests using clear filters. Need to navigate to an event? A built-in map ensures you stay on course. Adding events to your personal calendar? Just a single tap keeps you organised.",
+    "gLink": "https://github.com/COS301-SE-2024/WhatsOn-UP",
+    "email": "devforce.capstone@gmail.com",
+    "tags": "user-friendly, service-oriented, event-driven, navigation, AI, user-first-design"
+  },
+  {
+    "no": 24,
+    "pName": "ECHO",
+    "teamName": "Half Stack",
+    "projectWebsite": "https://echo-bm8z.onrender.com/",
+    "mentorOrg": "labs",
+    "shortDesc": "ECHO is a cutting-edge Angular-based Progressive Web Application powered by AI, designed to integrate seamlessly with multiple music streaming platforms. It offers personalised song recommendations by leveraging Sentiment Analysis to categorise music based on abstract themes, such as mood or theme.",
+    "longDesc": "ECHO is a cutting-edge Progressive Web Application built with Angular and powered by advanced AI technology, designed to revolutionise music discovery. Seamlessly integrating with multiple music streaming platforms, ECHO offers a highly personalised listening experience by using sophisticated Sentiment Analysis to categorise music based on abstract themes such as mood and genre. The platform features personalised song recommendations, detailed artist profiles, and dynamic modal displays for song and album information, all designed to enhance user engagement. It also includes sections dedicated to favourite and recommended moods, as well as users' listening insights. Utilizing Tailwind CSS for sleek design and Angular Material for polished UI components, ECHO combines modern aesthetics with functionality to create a visually striking and user-friendly experience.",
+    "gLink": "https://github.com/COS301-SE-2024/ECHO",
+    "email": "halfstack.capstone@outlook.com",
+    "tags": "AI, music, sentiment-analysis, user-friendly, PWA, user-friendly, machine-learning"
+  },
+  {
+    "no": 25,
+    "pName": "Smart Storage Organizer",
+    "teamName": "Syntax Savants",
+    "projectWebsite": "https://github.com/COS301-SE-2024/Smart-Storage-Organizer-Application/releases/tag/v1.0.0",
+    "mentorOrg": "epi",
+    "shortDesc": "The Smart Storage Organizer app by Syntax Savants helps users efficiently organize and locate their belongings with ease. It allows systematic cataloging, ensuring quick retrieval and enhanced organization.",
+    "longDesc": "Traditional storage organization methods often rely on manual labelling and searching, leading to wasted time and frustration. This project focuses on creating an application that will help users efficiently organize and easily locate their belongings. It aims to solve the problems associated with traditional storage methods, such as manual labelling and searching, which often result in wasted time and frustration. The objective of this project is to design and implement a system that simplifies item labelling and identification using QR codes and color coding. The key features of the system include: Simplify item labeling and identification using QR codes and color coding. Enhance searchability through text and voice search functionalities. Offer potential for enhanced search accuracy using AI integration.",
+    "gLink": "https://github.com/COS301-SE-2024/Smart-Storage-Organizer-Application",
+    "email": "syntaxsavants98@gmail.com",
+    "tags": "AI, Service Oriented, Smart Search, user-friendly, digital cataloging, QR codes"
+  },
+  {
+    "no": 26,
+    "pName": "Query Builder",
+    "teamName": "Ctrl Alt Elites",
+    "projectWebsite": "https://capstone-qbee.dns.net.za/",
+    "mentorOrg": "dns",
+    "shortDesc": "QBee is an innovative system that transforms how users interact with databases, regardless of their technical skill level. By replacing traditional query methods with an intuitive user-friendly form interface, QBee makes database querying effortless.",
+    "longDesc": "QBee is an innovative solution that transforms how users interact with databases, regardless of their technical skill level. By replacing traditional query methods with an intuitive user-friendly form interface, QBee makes database manipulation effortless and enables real-time query collaboration. It ensures robust data privacy and integrity, providing a secure environment for users. Beyond basic query building, QBee offers tools to visualize data through generated graphs, facilitating deeper insights and enhancing user experience and efficiency. QBee is the ultimate tool for modern database management and analysis.",
+    "gLink": "https://github.com/COS301-SE-2024/Query-Builder",
+    "email": "ctrlaltelitesdevs@gmail.com",
+    "tags": "databases, user-friendly, SQL, query-builder, graphing, data, reports"
+  },
+  {
+    "no": 27,
+    "pName": "Events System",
+    "teamName": "Bieber Fever",
+    "projectWebsite": "https://events-system.org",
+    "mentorOrg": "ent",
+    "shortDesc": "The events system builds relationships, and fosters growth, and promotes participation in events, learning initiatives. Make hosting, managing, and attending events easier with the events system!",
+    "longDesc": "The Event System aims to create a centralized platform that boosts employee engagement and cultivates a vibrant organizational culture. Its primary goals include increasing employee participation in events, simplifying event management processes, enhancing communication about upcoming activities, and providing valuable insights through analytics. By stream lining event discovery, hosting, and RSVP processes, the system seeks to foster a more connected workforce, reduce administrative burdens for hosts, keep employees informed through notifications, and enable datadriven decision-making for future events. Ultimately, the Event System strives to become an essential tool for improving overall organizational dynamics and encouraging active involvement in various company activities",
+    "gLink": "https://github.com/COS301-SE-2024/Events-System",
+    "email": "Bieber.capstone@gmail.com",
+    "tags": "user-friendly, novel, user-first-design, mobile-friendly, PWA"
+  },
+  {
+    "no": 28,
+    "pName": "MovieHub",
+    "teamName": "Girls Gone Code",
+    "projectWebsite": "https://events-system.org",
+    "mentorOrg": "epi",
+    "shortDesc": "MovieHub is an innovative platform that revolutionizes the movie-watching experience. Designed for cinephiles and casual viewers alike, it enhances social connectivity, making every movie night unforgettable.",
+    "longDesc": "MovieHub is a comprehensive movie-watching platform that combines social interaction, personalized recommendations, and collaborative viewing experiences. Users can create and join watch parties, allowing friends and family to enjoy films together in real time, no matter where they are. The app leverages advanced algorithms to offer tailored movie suggestions based on users' favourite genres and viewing history, enhancing discovery and engagement. With features like chat functionality and integrated audio capabilities, MovieHub fosters a vibrant community of film enthusiasts, making it the ultimate destination for both casual viewers and dedicated cinephiles to connect, share, and explore the world of cinema.",
+    "gLink": "https://github.com/COS301-SE-2024/MovieHub",
+    "email": "girlsgonecode.capstone@gmail.com",
+    "tags": "Films, Social Media, User-friendly, Entertainment, Discovery, Movie Recommendations, WatchParties, Social Viewing"
+  },
+  {
+    "no": 29,
+    "pName": "HighViz",
+    "teamName": "BitForge",
+    "projectWebsite": "",
+    "mentorOrg": "epi",
+    "shortDesc": "HighViz a comprehensive suite of AI tools for autonomous car vision that aims to imporove the driving experience.",
+    "longDesc": "HighViz a comprehensive suite of AI tools for autonomous car vision that aims to imporove the driving experience by providing a host of feature such as terrain mapping, lane following, obstacle avoidance.",
+    "gLink": "https://github.com/COS301-SE-2024/Autonomous-Car-Vision",
+    "email": "bitforge.capstone@gmail.com",
+    "tags": "AI, computer-vision, neural-networks"
+  },
+  {
+    "no": 30,
+    "pName": "MoodMix",
+    "teamName": "Five Guys",
+    "projectWebsite": "",
+    "mentorOrg": "hen",
+    "shortDesc": "MoodMix is an AI application that scans a users face and generates a playlist from their Emotions detected. You can also speak and playlists will be generated from certain keywords! Match the Mood, with MoodMix",
+    "longDesc": "MoodMix is an AI application that uses a machine learning model to detect the emotions on a users face after parsing the image and detecting certain features. The model will be able to detect between certain emotions and based on the results will generate a playlist accordingly to the emotion. Additionally we have a voice recognition feature where a user is able to speak into their microphone and certain keyword will be detected and playlists may also be generated from the keywords. The playlist generation works on different parameters and depending on detected keywords/emotion these parameters will be tuned to generate a playlist. ",
+    "gLink": "https://github.com/COS301-SE-2024/MoodMix",
+    "email": "fivedudes.capstone@gmail.com",
+    "tags": "AI, Music, Spotify-API, user-friendly, Machine Learning, Audio and Visual recognition, Mobile, Android, Flutter, Dart, Java."
+  }
+
+  ]
+  
+
+
+		// **********
+		// Logic
+		// ********** 
+		function imageExists(image_url){
+
+		var http = new XMLHttpRequest();
+
+		http.open('HEAD', image_url, false);
+		http.send();
+
+		return http.status != 404;
+
+		}
+
+		const clientNames = {
+			"sss" : "Sharp Software Solutions",
+			"epi" : "EPI-USE",
+			"labs" : "EPI-USE Labs",
+			"agb" : "Agile Bridge",
+			"dvt" : "DVT",
+			"deloitte" : "Deloitte",
+			"bitm" : "Bit M",
+			"gendac" : "Gendac",
+			"aws" : "Amazon Web Services",
+			"seed" : "Seed Analytics",
+			"dns" : "DNS Africa",
+			"ent" : "Entellect",
+      "hen" : "Hensoldt GEW"
+		}
+
+
+		var template = $("#template");
+		var stands = $("#tempstand");
+
+		var projects = projects.sort(
+	() => Math.random() - 0.5
+  );
+
+		for (var i = 0; i < projects.length; i++) {
+
+			template.find(".name").html(projects[i].pName);
+
+			template.find(".team").html(projects[i].teamName);
+
+			template.find(".description").html(projects[i].longDesc);
+
+			//if(imageExists("/images/fulls/transparent_logos/"+projects[i].no+".png")) {
+				template.find(".logo").attr("src", "/images/fulls/transparent_logos/"+projects[i].no+".png");
+			//}
+			/*else if(imageExists("/images/fulls/transparent_logos/"+projects[i].no+".jpg")) {
+					template.find(".logo").attr("src", "/images/fulls/transparent_logos/"+projects[i].no+".jpg");
+			} 
+			else if(imageExists("/images/fulls/logos/"+projects[i].no+".png")) {
+					template.find(".logo").attr("src", "/images/fulls/logos/"+projects[i].no+".png");
+			} else {
+				template.find(".logo").attr("src", "/images/fulls/logos/"+projects[i].no+".jpg");
+			}
+			*/
+			//if(imageExists("/images/team_photos/"+projects[i].no+".png"))
+			//	template.find(".logo_link").attr("href", "/images/team_photos/"+projects[i].no+".png");
+			//else if(imageExists("/images/team_photos/"+projects[i].no+".jpg")) {
+				template.find(".logo_link").attr("href", "/images/team_photos/"+projects[i].no+".jpg");
+			//} else {
+			//	template.find(".logo_link").attr("href", "/images/team_photos/"+projects[i].no+".jpeg");
+			//}
+
+
+			template.find(".fa-github").attr("href", projects[i].gLink);// + projects[i].name.replaceAll(" ", "-"));
+
+			template.find(".fa-envelope").attr("href", "mailto:"+projects[i].email);
+
+			if (projects[i].projectWebsite !== "#") {
+				template.find(".fa-globe-africa").attr("href", projects[i].projectWebsite);
+				template.find(".fa-globe-africa").removeAttr("disabled");
+			} else {
+				template.find(".fa-globe-africa").attr("disabled", "disabled");
+			}
+
+			if (projects[i].video && projects[i].video !== "#") {
+				template.find(".fa-youtube").attr("href", projects[i].video);
+				template.find(".fa-youtube").removeAttr("disabled");
+			} else {
+				template.find(".fa-youtube").attr("disabled", "disabled");
+			}
+
+			var chips = ""
+			if(!Array.isArray(projects[i].tags))
+				 chips = projects[i].tags.split(',').map(item => `<p class='chip-item'>${item.trim()}</p>`).join("");
+			else
+				chips = projects[i].tags.map(item => `<p class='chip-item'>${item.trim()}</p>`).join("")
+			
+
+			template.find(".chips").html(chips);
+
+			template.find(".client").attr("alt", clientNames[[i].mentorOrg]);
+			template.find(".client_org").attr("title", clientNames[projects[i].mentorOrg]);
+			template.find(".client_org").html("Product Owner: " + clientNames[projects[i].mentorOrg]);
+			template.find(".client").attr("src", "/images/clients/"+projects[i].mentorOrg+".png");
+			$("#main").append(template.html());
+			
+			// stands.find(".team").html(projects[i].team);
+			// stands.find(".project").html(projects[i].name);
+			// stands.find(".standNum").html(projects[i].stall);
+			// $("#stands").append("<tr>"+stands.html()+"</tr>"); 
+			
+		}
+
+		$("a").on("click", function (event) {
+			if ($(this).is("[disabled]")) {
+				event.preventDefault();
+			}
+		});
+	
+
+	</script>
+
+	<!--Scripts -->
+
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
