@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 100" width="100%" height="100%">
+  <rect width="100%" height="100%" fill="none"/>
+  <g transform="translate(10, 15)">
+    <circle cx="35" cy="35" r="28" fill="#E63946"/>
+    <circle cx="35" cy="35" r="16" fill="#1D3557"/>
+    <circle cx="35" cy="35" r="6" fill="#FFFFFF"/>
+    <text x="80" y="40" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="28" font-weight="900" fill="#1D3557" letter-spacing="1.5">COMOTION</text>
+    <text x="82" y="60" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#E63946" letter-spacing="3.5">LOW CODE</text>
+  </g>
+</svg>
