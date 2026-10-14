@@ -25,6 +25,23 @@
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" />
 	</noscript>
+	<style>
+		.card-img-top {
+			max-height: 100px;
+			object-fit: contain;
+		}
+
+		.team {
+			cursor: pointer;
+		}
+
+		.hall {
+			max-height: 500px;
+			margin: 0 auto;
+			display: block;
+		}
+	</style>
+
 </head>
 
 <body class="is-preload">
@@ -148,125 +165,161 @@
 					</tr>
 			</tbody>
 			</table>
-			<img src="images/hall.png" alt="hall layout" class="img-thumbnail">
+			<img src="images/hall.png" alt="hall layout" class="img-responsive hall center">
 		</section>
 
-		<section class="panel" id="sponsor">
-			<h1>Sponsors</h1>
-			<h2 class="center">We would like to thank our Sponsors for this year's prizes. Thank you for your continued support.</h2>
-			<div class="row row-cols-1 row-cols-md-3 row-cols-lg-3 g-4">
+<section class="panel active" id="sponsor">
+			<h1>Sponsor's</h1>
+			<h2 class="center">We would like to thank our Sponsors for this years prizes. Thank you for your continued
+				support.</h2>
+			<div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4">
 
-				<div class="card" style="width: 18rem;">
+				<!-- <div class="card" style="width: 18rem;">
 					<div class="card-body">
-						<a href="https://www.agilebridge.co.za/" target="_blank">
-							<img src="images/sponsors/agile.png" class="card-img-top img-responsive" alt="Agile Bridge">
+						<a href="https://entelect.co.za" target="_blank">
+							<img src="images/sponsors/entelect.jpg" class="card-img-top img-responsive" alt="...">
 						</a>
-						<div style="padding-top: 1.5em;">This award recognizes the team that best exemplifies Agile principles through effective use of personas, clear value delivery, and structured epics and stories. The winning team demonstrates strong use of Agile project management tools, continuous documentation updates, and a seamless, adaptive workflow throughout development.</div>
+						<div style="padding-top: 2em;">
+							This award celebrates teams that demonstrate strong architectural thinking and design excellence. It recognizes solutions built on well-considered software architectures and design patterns that effectively meet quality requirements such as scalability, maintainability, and reliability, showcasing a deep understanding of how structure drives system success.
+							
+						</div>
 					</div>
 					<div class="card-footer">
-						<p class="card-text"><span><i class="icon solid fa-tasks"></i><br /> Agile Process Adoption</span></p>
+						<p class="card-text"><span><i class="icon solid fa-building"></i><br> Architectural
+								Awareness Prize</span></p>
 					</div>
-				</div>
-
-				<div class="card" style="width: 18rem;">
-					<div class="card-body">
-						<a href="https://bbdsoftware.com/" target="_blank">
-							<img src="images/sponsors/bbd.svg" class="card-img-top img-responsive" style="max-height: 55px; width: auto; margin: 10px auto; display: block;" alt="BBD">
-						</a>
-						<div style="padding-top: 1.5em;">This award honours the team that demonstrates exceptional creativity in algorithm design. It recognizes solutions that tackle real-world challenges through innovative, correct, and efficient algorithms, showcasing brilliance in addressing scalability, optimization, and performance through elegant and practical computational approaches.</div>
-					</div>
-					<div class="card-footer">
-						<p class="card-text"><span><i class="icon solid fa-code-branch"></i><br /> Algorithmic innovation</span></p>
-					</div>
-				</div>
-
-				<div class="card" style="width: 18rem;">
-					<div class="card-body">
-						<a href="https://www.naked.insure/" target="_blank">
-							<img src="images/sponsors/naked-2.jpg" class="card-img-top img-responsive" alt="Naked">
-						</a>
-						<div style="padding-top: 1.5em;">This award recognizes the team that demonstrates outstanding commitment to cybersecurity principles. Beyond building resilient and secure systems, the winners showcase advanced security practices, apply modern defensive techniques, and write code with an intuitive understanding of secure design, ensuring robustness against evolving digital threats.</div>
-					</div>
-					<div class="card-footer">
-						<p class="card-text"><span><i class="icon solid fa-shield-alt"></i><br /> Cyber Security and Information</span></p>
-					</div>
-				</div>
-
-				<div class="card" style="width: 18rem;">
-					<div class="card-body">
-						<a href="https://www.southerncross.solutions/" target="_blank">
-							<img src="images/sponsors/scs_logo.png" class="card-img-top img-responsive" alt="Southern Cross Solutions">
-						</a>
-						<div style="padding-top: 1.5em;">This award honours the team that exemplifies DevOps best practices through seamless integration of development and operations. The winning team demonstrates strong attention to non-functional requirements, effective use of CI/CD pipelines and automation tools, robust observability implementation, and mature operational practices ensuring reliability and continuous delivery.</div>
-					</div>
-					<div class="card-footer">
-						<p class="card-text"><span><i class="icon solid fa-terminal"></i><br /> DevOps Adherence Excellence</span></p>
-					</div>
-				</div>
-
-				<div class="card" style="width: 18rem;">
-					<div class="card-body">
-						<a href="https://tyto.africa/" target="_blank">
-							<img src="images/sponsors/tyto.svg" class="card-img-top img-responsive" style="max-height: 55px; width: auto; margin: 10px auto; display: block;" alt="Tyto">
-						</a>
-						<div style="padding-top: 1.5em;">This award celebrates teams that demonstrate strong architectural thinking and design excellence. It recognizes solutions built on well-considered software architectures and design patterns that effectively meet quality requirements such as scalability, maintainability, and reliability, showcasing a deep understanding of how structure drives system success.</div>
-					</div>
-					<div class="card-footer">
-						<p class="card-text"><span><i class="icon solid fa-building"></i><br /> Architectural Awareness</span></p>
-					</div>
-				</div>
-
+				</div> -->
 				<div class="card" style="width: 18rem;">
 					<div class="card-body">
 						<a href="https://epiuse.com/" target="_blank">
-							<img src="images/sponsors/epiuse.jpg" class="card-img-top img-responsive" alt="Epi-Use">
+							<img src="images/sponsors/epiuse.jpg" class="card-img-top img-responsive" alt="...">
 						</a>
-						<div style="padding-top: 1.5em;">This award celebrates projects that push the boundaries of technology through exceptional creativity and originality. The winning team demonstrates pioneering innovation, leveraging emerging technologies such as AI, Machine Learning, Blockchain, VR/AR, or Cloud Native solutions to deliver groundbreaking impact and showcase visionary thinking in software development.</div>
+						<div style="padding-top: 2em;">
+							This award celebrates projects that push the boundaries of technology through exceptional creativity and originality. The winning team demonstrates pioneering innovation, leveraging emerging technologies such as AI, Machine Learning, Blockchain, VR/AR, or Cloud Native solutions to deliver groundbreaking impact and showcase visionary thinking in software development.
+						</div>
 					</div>
 					<div class="card-footer">
-						<p class="card-text"><span><i class="icon solid fa-lightbulb"></i><br /> Innovation</span></p>
+						<p class="card-text">
+							<span><i class="icon solid fa-lightbulb"></i> <br>Innovation Prize</span>
+						</p>
 					</div>
 				</div>
-
 				<div class="card" style="width: 18rem;">
 					<div class="card-body">
-						<a href="https://entelect.co.za" target="_blank">
-							<img src="images/sponsors/entellect_3.png" class="card-img-top img-responsive" alt="Entelect">
+						<a href="https://www.agilebridge.co.za/" target="_blank">
+							<img src="images/sponsors/agile.png" class="card-img-top img-responsive" alt="...">
 						</a>
-						<div style="padding-top: 1.5em;">This award recognizes the team that embodies a true culture of software engineering excellence. The winners demonstrate strong technical craftsmanship, disciplined processes, and collaborative teamwork, evident through their coding standards, design practices, planning, monitoring, data integrity, and transparent, value-driven team dynamics.</div>
+						<div>
+							<div style="padding-top: 3em;"> 
+								This award recognizes the team that best exemplifies Agile principles through effective use of personas, clear value delivery, and structured epics and stories. The winning team demonstrates strong use of Agile project management tools, continuous documentation updates, and a seamless, adaptive workflow throughout development.
+							</div>
+						</div>
 					</div>
 					<div class="card-footer">
-						<p class="card-text"><span><i class="icon solid fa-drafting-compass"></i><br /> Software Engineering Excellence</span></p>
+						<p class="card-text"><span><i class="icon solid fa-dice"></i><br> Agile Process Adoption Prize
+							</span></p>
 					</div>
 				</div>
-
+				<div class="card" style="width: 18rem;">
+					<div class="card-body">
+						<a href="https://www.entelect.co.za/" target="_blank">
+							<img src="images/sponsors/entelect.jpg" class="card-img-top img-responsive" alt="...">
+						</a>
+						<div style="padding-top: 2em;">
+							This award recognizes the team that embodies a true culture of software engineering excellence. The winners demonstrate strong technical craftsmanship, disciplined processes, and collaborative teamwork, evident through their coding standards, design practices, planning, monitoring, data integrity, and transparent, value-driven team dynamics.
+						</div>
+					</div>
+					<div class="card-footer">
+						<p class="card-text"><span><i class="icon solid fa-drafting-compass"></i><br> Software
+								Engineering
+								Excellence Prize </span></p>
+					</div>
+				</div>
+				<!-- <div class="card" style="width: 18rem;">
+					<div class="card-body">
+						<a href="https://www.kindle.co.za/" target="_blank">
+							<img src="images/sponsors/kindle.png" class="card-img-top img-responsive" alt="...">
+						</a>
+            <span>The 'Fit for purpose' prize will be awarded to the team that shows the best insight into the realworld problem domain and combines this knowledge with their technical skills to model and develop a software solution that accurately and efficiently addresses the real-world requirements, both functional and non-functional.</span>
+					</div>
+					<div class="card-footer">
+						<p class="card-text"><span><i class="icon solid fa-balance-scale"></i><br /> Fit for Purpose
+							</span>
+						</p>
+					</div>
+				</div> -->
+				<!-- <div class="card" style="width: 18rem;">
+					<div class="card-body">
+						<a href="https://derivco.co.za/locations/south-africa/pretoria/" target="_blank">
+							<img src="images/sponsors/derivco.jpg" class="card-img-top img-responsive" alt="...">
+						</a>
+            <span>The most innovative and creative use of data in a teams software system observing the current state of the art in finding the best ways to enhance the use of data in their system.</span>
+					</div>
+					<div class="card-footer">
+						<p class="card-text"><span><i class="icon solid fa-balance-scale"></i><br /> Data Science: Most innovate use of Data
+							</span>
+						</p>
+					</div>
+				</div> -->
+				<div class="card" style="width: 18rem;">
+					<div class="card-body">
+						<a href="https://www.naked.insure/" target="_blank">
+							<img src="images/sponsors/naked.svg" width="150" class="card-img-top" alt="...">
+						</a>
+						<div style="padding-top: 2em;"> 
+							This award recognizes the team that demonstrates outstanding commitment to cybersecurity principles. Beyond building resilient and secure systems, the winners showcase advanced security practices, apply modern defensive techniques, and write code with an intuitive understanding of secure design, ensuring robustness against evolving digital threats.
+						</div>
+					</div>
+					<div class="card-footer">
+						<p class="card-text"><span><i class="icon solid fa-lock"></i><br>Cyber &amp; Information Security Prize
+							</span>
+						</p>
+					</div>
+				</div>
+				<div class="card" style="width: 18rem;">
+					<div class="card-body">
+						<a href="https://bbdsoftware.com/" target="_blank">
+							<img src="images/sponsors/bbd.png" class="card-img-top img-responsive" alt="...">
+						</a>
+						<div style="padding-top: 2em;">
+							This award honours the team that demonstrates exceptional creativity in algorithm design. It recognizes solutions that tackle real-world challenges through innovative, correct, and efficient algorithms, showcasing brilliance in addressing scalability, optimization, and performance through elegant and practical computational approaches.
+						</div>
+					</div>
+					<div class="card-footer">
+						<p class="card-text"><span><i class="icon solid fa-paper-plane"></i> <br>Algorithmic innovation
+							</span></p>
+					</div>
+				</div>
 				<div class="card" style="width: 18rem;">
 					<div class="card-body">
 						<a href="https://www.gendac.co.za/" target="_blank">
-							<img src="images/sponsors/gendac.png" class="card-img-top img-responsive" alt="Gendac">
+							<img src="images/sponsors/gendac.png" class="card-img-top img-responsive" alt="...">
 						</a>
-						<div style="padding-top: 1.5em;">This award honours the team that exemplifies outstanding collaboration and unity. The winning team demonstrates mutual support, effective communication, and balanced contributions while fostering a culture of feedback, continuous improvement, and resilience, showing that true success is built through collective effort and shared purpose.</div>
+						<div style="padding-top: 2em;">
+						 This award honours the team that exemplifies outstanding collaboration and unity. The winning team demonstrates mutual support, effective communication, and balanced contributions while fostering a culture of feedback, continuous improvement, and resilience, showing that true success is built through collective effort and shared purpose.
+						</div>
 					</div>
 					<div class="card-footer">
-						<p class="card-text"><span><i class="icon solid fa-users"></i><br /> Exceptional Teamwork</span></p>
+						<p class="card-text"><span><i class="icon solid fa-users"></i> <br>Team-Work Excellence Prize
+							</span></p>
 					</div>
 				</div>
-
 				<div class="card" style="width: 18rem;">
 					<div class="card-body">
-						<a href="https://comotion.co.za/" target="_blank">
-							<img src="images/sponsors/comotion.svg" class="card-img-top img-responsive" style="max-height: 55px; width: auto; margin: 10px auto; display: block;" alt="Comotion Low Code">
+						<a href="https://www.southerncross.solutions/" target="_blank">
+							<img src="images/sponsors/scs_logo.png" class="card-img-top img-responsive" alt="...">
 						</a>
-						<div style="padding-top: 1.5em;">This award honours the team that demonstrates exceptional creativity in artificial intelligence model design. It recognizes solutions that tackle complex, real-world challenges through innovative and well-architected AI systems, showcasing brilliance in addressing model accuracy, training efficiency, and scalability through elegant and practical machine learning approaches.</div>
+						<div style="padding-top: 2em;">
+							This award honours the team that exemplifies DevOps best practices through seamless integration of development and operations. The winning team demonstrates strong attention to non-functional requirements, effective use of CI/CD pipelines and automation tools, robust observability implementation, and mature operational practices ensuring reliability and continuous delivery.
+						</div>
 					</div>
 					<div class="card-footer">
-						<p class="card-text"><span><i class="icon solid fa-robot"></i><br /> AI Model Design Excellence</span></p>
+						<p class="card-text"><span><i class="icon solid fa-terminal"></i> <br>DevOps Adherence Prize
+							</span></p>
 					</div>
 				</div>
-
 			</div>
-		</section>
-
+		<div class="closer"></div></section>
 
 		<!-- Footer -->
 		<footer id="footer" class="panel">
@@ -282,6 +335,8 @@
 					<section>
 						<h2>Get in touch</h2>
 						<div>
+              <p>Dr. Avinash Singh (<a href="mailto:asingh@cs.up.ac.za?subject=Project Day 2025">asingh@cs.up.ac.za</a>)
+							</p>
 							<p>Department of Computer Science<br />
 							University of Pretoria
 							</p>
@@ -304,11 +359,11 @@
     "pName": "AEGIS",
     "teamName": "The Alchemists",
     "projectWebsite": "https://aegis-cos301.vercel.app/",
-    "mentorOrg": "comotion",
+    "mentorOrg": "bbd",
     "shortDesc": "AEGIS is an adversarial AI-powered technical assessment platform focused on investigating how modern Large Language Models (LLMs) reason, fail, hallucinate, and can be manipulated through carefully engineered adversarial prompting techniques.",
     "longDesc": "AEGIS transforms conventional technical assessment questions into adversarially engineered challenges. It deliberately tests and exposes AI usage patterns in coding evaluations, allowing recruiters to assess true candidate understanding while investigating LLM failure modes and vulnerabilities.",
     "gLink": "https://github.com/COS301-SE-2026/AEGIS--Adversarial-Evaluation---Genuineness-Intelligence-System-",
-    "email": "",
+    "email": "admin.alchemists@gmail.com",
     "tags": [
       "AI",
       "Adversarial Machine Learning",
@@ -328,7 +383,7 @@
     "shortDesc": "An AI-powered fire spread prediction and containment system using real-time weather, environmental data, and user reports to simulate fire progression and support emergency responders.",
     "longDesc": "Fire Away simulates wildfire progression in real-time by ingesting environmental telemetry, satellite data, and community reports. It provides first responders with early warning alerts, infrastructure risk forecasts, and actionable containment guidance.",
     "gLink": "https://github.com/COS301-SE-2026/AI-Powered-Fire-Spread-Prediction-and-Containment-System",
-    "email": "",
+    "email": "panicatthekernel.26@gmail.com",
     "tags": [
       "AI",
       "Wildfire Prediction",
@@ -348,7 +403,7 @@
     "shortDesc": "A risk-free trading simulator that runs on real market data so beginners can learn how financial markets behave without losing real capital.",
     "longDesc": "AutoFlow provides real-market simulation with virtual balances, gamified leaderboards, and an AI assistant that explains portfolio exposure and risk factors, turning trading mistakes into actionable learning experiences.",
     "gLink": "https://github.com/COS301-SE-2026/AutoFlow-Trade-Simulator",
-    "email": "",
+    "email": "capstonedevteam@gmail.com",
     "tags": [
       "FinTech",
       "Trading Simulator",
@@ -360,35 +415,14 @@
   },
   {
     "no": 4,
-    "pName": "Boardwise",
-    "teamName": "Works On My Machine™",
-    "projectWebsite": "https://www.boardwise.games",
-    "mentorOrg": "labs",
-    "shortDesc": "A comprehensive digital ecosystem for tabletop gaming enthusiasts: discover games, manage collections, join communities, organize events, and access an AI-grounded rulebook library.",
-    "longDesc": "Boardwise brings together game discovery, collection management, peer-to-peer listings, and The Vault—an AI-assisted rulebook knowledge base that allows players to ask contextual rules questions directly grounded in official game manuals.",
-    "gLink": "https://github.com/COS301-SE-2026/Boardwise",
-    "email": "",
-    "tags": [
-      "Gaming",
-      "Community",
-      "AI Rulebook Ingestion",
-      "Vue.js",
-      "Nuxt.js",
-      "Java",
-      "Spring Boot",
-      "Marketplace"
-    ]
-  },
-  {
-    "no": 5,
     "pName": "CloudSherpa",
     "teamName": "Team BitFlip",
-    "projectWebsite": "https://cloudsherpa.gjjcs.org/hi/",
+    "projectWebsite": "https://cloudsherpa.gjjcs.org/",
     "mentorOrg": "bbd",
     "shortDesc": "An AI-driven multi-cloud cost optimization platform analyzing usage and spend across major cloud providers, including AWS, Azure, and GCP.",
     "longDesc": "CloudSherpa ingests cloud billing and telemetry data across multi-cloud environments, utilizing machine learning intelligence to identify waste, forecast expenditure, and recommend automated rightsizing strategies.",
     "gLink": "https://github.com/COS301-SE-2026/CloudSherpa",
-    "email": "",
+    "email": "bitflip301@gmail.com",
     "tags": [
       "Cloud Cost Optimization",
       "Multi-Cloud",
@@ -401,11 +435,11 @@
     ]
   },
   {
-    "no": 6,
+    "no": 5,
     "pName": "CodeClash",
     "teamName": "QuantDevs",
     "projectWebsite": "https://www.codeclash.co.za",
-    "mentorOrg": "ent",
+    "mentorOrg": "labs",
     "shortDesc": "A real-time competitive 1v1 mathematics and algorithm collaboration platform with live matchmaking, ELO rankings, and code execution sandboxes.",
     "longDesc": "CodeClash pits developers and students against each other in real-time timed coding battles and math competitions, backed by Judge0 sandboxed code execution, dynamic ELO ratings, and interactive community leaderboards.",
     "gLink": "https://github.com/COS301-SE-2026/CodeClash",
@@ -422,7 +456,7 @@
     ]
   },
   {
-    "no": 7,
+    "no": 6,
     "pName": "ConsultIQ",
     "teamName": "Team TROOS",
     "projectWebsite": "https://consult-iq-red.vercel.app",
@@ -430,7 +464,7 @@
     "shortDesc": "An intelligent matching platform designed for consultancy firms to match the right consultants to the right client projects using a multi-factor fit-scoring engine.",
     "longDesc": "ConsultIQ evaluates consultant skills, current availability, geographical location, and cost-to-company metrics to rank candidate suitability with complete algorithmic transparency, simplifying enterprise talent allocation.",
     "gLink": "https://github.com/COS301-SE-2026/ConsultIQ",
-    "email": "",
+    "email": "teamtroos@gmail.com",
     "tags": [
       "Consultancy",
       "Resource Allocation",
@@ -442,7 +476,7 @@
     ]
   },
   {
-    "no": 8,
+    "no": 7,
     "pName": "Insightful Phish",
     "teamName": "Project Cheesecake",
     "projectWebsite": "https://www.insightfulphish.co.za",
@@ -461,15 +495,15 @@
     ]
   },
   {
-    "no": 9,
+    "no": 8,
     "pName": "Driving Tracker",
     "teamName": "OmniTech",
-    "projectWebsite": "https://sentemngomez.github.io/upptime",
+    "projectWebsite": "https://driving-tracker-seven.vercel.app/",
     "mentorOrg": "gendac",
     "shortDesc": "An intelligent Android driving assistant integrating smartphone sensors, Azure Maps, and OBD-II vehicle telemetry to evaluate driving behavior, fuel efficiency, and vehicle health.",
     "longDesc": "Driving Tracker pairs real-time OBD-II vehicle diagnostics with mobile sensor fusion to deliver driving safety scoring, predictive maintenance alerts, fuel optimization tips, and gamified community leaderboards.",
     "gLink": "https://github.com/COS301-SE-2026/Driving-Tracker",
-    "email": "",
+    "email": "omnitech.capstone@gmail.com",
     "tags": [
       "IoT",
       "OBD-II",
@@ -482,7 +516,7 @@
     ]
   },
   {
-    "no": 10,
+    "no": 9,
     "pName": "EquityLens",
     "teamName": "The Big Five (TB5)",
     "projectWebsite": "https://equitylens.co.za/",
@@ -490,7 +524,7 @@
     "shortDesc": "A retail investment platform providing institutional-grade portfolio analytics, sentiment-driven news correlation, and an AWS Bedrock-powered financial assistant.",
     "longDesc": "EquityLens bridges the gap for retail investors by parsing financial statements, correlating market shifts with global news feeds, and delivering personalized portfolio risk insights via generative AI models on AWS Bedrock.",
     "gLink": "https://github.com/COS301-SE-2026/Equity-Lens",
-    "email": "",
+    "email": "thebigfivetb5@gmail.com",
     "tags": [
       "FinTech",
       "AWS Bedrock",
@@ -503,10 +537,10 @@
     ]
   },
   {
-    "no": 11,
+    "no": 10,
     "pName": "Full SMS",
     "teamName": "CoreTech",
-    "projectWebsite": "#",
+    "projectWebsite": "https://fullsms.tech",
     "mentorOrg": "up",
     "shortDesc": "A modern web architecture rewrite of a single-molecule spectroscopy (SMS) scientific data analysis platform with advanced biophysical data processing algorithms.",
     "longDesc": "Full SMS migrates legacy scientific desktop software into a modern high-performance web platform featuring change-point detection, hierarchical clustering, lifetime fitting, and correlation analysis for biophysical research workflows.",
@@ -524,28 +558,7 @@
     ]
   },
   {
-    "no": 12,
-    "pName": "Gesture-Based Drone Control",
-    "teamName": "Codex Merchants",
-    "projectWebsite": "https://cos301-se-2026.github.io/Gesture-Based-Drone-Control/",
-    "mentorOrg": "labs",
-    "shortDesc": "Real-time hand-gesture drone piloting using MediaPipe landmark recognition, WebSocket command streaming, AirSim simulator integration, and live telemetry dashboards.",
-    "longDesc": "Translates bare-hand gestures captured via webcam into low-latency drone flight maneuvers. Built with safety-first fail-safes including loss-of-tracking hovering, rule-based classification, and simulated flight validation in AirSim.",
-    "gLink": "https://github.com/COS301-SE-2026/Gesture-Based-Drone-Control",
-    "email": "codexmerchants@gmail.com",
-    "tags": [
-      "Computer Vision",
-      "MediaPipe",
-      "Drone Control",
-      "AirSim",
-      "FastAPI",
-      "WebSockets",
-      "React",
-      "Python"
-    ]
-  },
-  {
-    "no": 13,
+    "no": 11,
     "pName": "Hackathon Platform",
     "teamName": "Keyboard Gremlins",
     "projectWebsite": "https://www.hackathonplatform.co.za/",
@@ -553,7 +566,7 @@
     "shortDesc": "A cloud-agnostic competitive hackathon platform for deterministic optimization challenges featuring real-time automated scoring and live leaderboards.",
     "longDesc": "Automates hackathon lifecycles from participant registration to automated multi-threaded solution grading. Designed to handle submission traffic spikes with a worker pool architecture and modular Spring Boot backend.",
     "gLink": "https://github.com/COS301-SE-2026/Hackathon-Platform",
-    "email": "",
+    "email": "	keyboardgremlins@gmail.com",
     "tags": [
       "Hackathons",
       "Competitive Programming",
@@ -565,11 +578,11 @@
     ]
   },
   {
-    "no": 14,
+    "no": 12,
     "pName": "Mealchemy",
     "teamName": "PUL5E",
     "projectWebsite": "https://mealchemy-backend-prod-otygypdv7a-ey.a.run.app",
-    "mentorOrg": "epi",
+    "mentorOrg": "labs",
     "shortDesc": "An intelligent recipe management and discovery ecosystem that transforms available pantry ingredients into personalized, shoppable culinary experiences.",
     "longDesc": "Mealchemy eliminates meal-time indecision by cataloging home pantry stock, recommending tailored recipes, generating dynamic shopping lists, and connecting users to a community-driven recipe discovery vault.",
     "gLink": "https://github.com/COS301-SE-2026/Mealchemy",
@@ -585,15 +598,15 @@
     ]
   },
   {
-    "no": 15,
+    "no": 13,
     "pName": "Budget It",
     "teamName": "Dev OOP's",
     "projectWebsite": "https://cos301-se-2026.github.io/Mobile-Budgeting-App/",
-    "mentorOrg": "aws",
+    "mentorOrg": "fuseit",
     "shortDesc": "An offline-first mobile budgeting application designed to track expenses, import bank statements, and provide AI spending insights without persistent internet connectivity.",
     "longDesc": "Budget It combines local on-device persistence, bank statement parsing, and AWS Cognito authentication with intelligent budgeting tools, allowing users to take charge of their finances wherever they are.",
     "gLink": "https://github.com/COS301-SE-2026/Mobile-Budgeting-App",
-    "email": "",
+    "email": "devoops42@gmail.com",
     "tags": [
       "FinTech",
       "Offline-First",
@@ -605,7 +618,7 @@
     ]
   },
   {
-    "no": 16,
+    "no": 14,
     "pName": "Neighbourhood WatchDog",
     "teamName": "Team Intrepid",
     "projectWebsite": "https://neighbourhood-watch-dog.vercel.app/home",
@@ -626,7 +639,28 @@
     ]
   },
   {
-    "no": 17,
+    "no": 15,
+    "pName": "Gesture-Based Drone Control",
+    "teamName": "Codex Merchants",
+    "projectWebsite": "https://cos301-se-2026.github.io/Gesture-Based-Drone-Control/",
+    "mentorOrg": "epi",
+    "shortDesc": "Real-time hand-gesture drone piloting using MediaPipe landmark recognition, WebSocket command streaming, AirSim simulator integration, and live telemetry dashboards.",
+    "longDesc": "Translates bare-hand gestures captured via webcam into low-latency drone flight maneuvers. Built with safety-first fail-safes including loss-of-tracking hovering, rule-based classification, and simulated flight validation in AirSim.",
+    "gLink": "https://github.com/COS301-SE-2026/Gesture-Based-Drone-Control",
+    "email": "codexmerchants@gmail.com",
+    "tags": [
+      "Computer Vision",
+      "MediaPipe",
+      "Drone Control",
+      "AirSim",
+      "FastAPI",
+      "WebSockets",
+      "React",
+      "Python"
+    ]
+  },
+  {
+    "no": 16,
     "pName": "OptiGrid",
     "teamName": "Coreflow",
     "projectWebsite": "https://optigrid.co.za",
@@ -646,7 +680,7 @@
     ]
   },
   {
-    "no": 18,
+    "no": 17,
     "pName": "OptiLifts",
     "teamName": "hatrock",
     "projectWebsite": "https://app.optilifts.app/",
@@ -654,7 +688,7 @@
     "shortDesc": "An intelligent workout management platform that adapts strength training sessions in real-time, providing progressive overload guidance to maximize athletic progression.",
     "longDesc": "OptiLifts tracks repetition velocity, fatigue metrics, and historical PRs to compute dynamic in-session weight and rep recommendations, keeping strength athletes progressing sustainably and safely.",
     "gLink": "https://github.com/COS301-SE-2026/OptiLifts",
-    "email": "",
+    "email": "hatrock26@gmail.com",
     "tags": [
       "FitnessTech",
       "Progressive Overload",
@@ -666,7 +700,7 @@
     ]
   },
   {
-    "no": 19,
+    "no": 18,
     "pName": "PenFlow",
     "teamName": "The BroCode",
     "projectWebsite": "https://pen-flow.com",
@@ -685,7 +719,7 @@
     ]
   },
   {
-    "no": 20,
+    "no": 19,
     "pName": "Savanna Sentinel",
     "teamName": "Sigill",
     "projectWebsite": "https://savannasentinel.co.za/",
@@ -693,7 +727,7 @@
     "shortDesc": "An anti-poaching intelligence and wildlife conservation platform helping game reserve rangers detect poaching hotspots, plan patrols, and log observations offline.",
     "longDesc": "Savanna Sentinel delivers GIS mapping, spatial predictive hotspot modeling, offline field data sync, and emergency incident dispatch tools to safeguard endangered wildlife across African conservation reserves.",
     "gLink": "https://github.com/COS301-SE-2026/Savanna-Sentinel",
-    "email": "",
+    "email": "sigill.team@gmail.com",
     "tags": [
       "Conservation Tech",
       "Anti-Poaching",
@@ -705,7 +739,7 @@
     ]
   },
   {
-    "no": 21,
+    "no": 20,
     "pName": "FlashID",
     "teamName": "Tech Titans",
     "projectWebsite": "https://cos301-se-2026.github.io/South-African-Digital-ID-Wallet/",
@@ -726,7 +760,7 @@
     ]
   },
   {
-    "no": 22,
+    "no": 21,
     "pName": "SpendSense",
     "teamName": "Team MARK2",
     "projectWebsite": "https://d33z1c39vjhkej.cloudfront.net",
@@ -747,15 +781,15 @@
     ]
   },
   {
-    "no": 23,
+    "no": 22,
     "pName": "SupaNeighbour",
     "teamName": "Parse&Co",
-    "projectWebsite": "#",
+    "projectWebsite": "https://green-beach-06bbfcd03.7.azurestaticapps.net/",
     "mentorOrg": "gendac",
     "shortDesc": "A community-driven platform connecting individuals in need with local neighbours willing to assist with skills, supplies, and neighbourhood aid.",
     "longDesc": "SupaNeighbour strengthens local mutual aid and civic solidarity by allowing verified community members to post assistance requests, coordinate neighborhood initiatives, and track volunteer contributions safely.",
     "gLink": "https://github.com/COS301-SE-2026/Supa-Neighbour",
-    "email": "james.example.298@gmail.com",
+    "email": "parseandco@gmail.com",
     "tags": [
       "CivicTech",
       "Community Aid",
@@ -767,7 +801,7 @@
     ]
   },
   {
-    "no": 24,
+    "no": 23,
     "pName": "Momently",
     "teamName": "Team Cybernauts",
     "projectWebsite": "https://momentlyapp.org",
@@ -787,7 +821,7 @@
     ]
   },
   {
-    "no": 25,
+    "no": 24,
     "pName": "Tyto PhishShield",
     "teamName": "Team FIVE GUYS",
     "projectWebsite": "https://capstone-five-guys.dns.net.za/",
@@ -795,7 +829,7 @@
     "shortDesc": "An enterprise Human Risk Management (HRM) platform delivering AI-powered phishing awareness simulations, gamified employee training, and automated threat defense.",
     "longDesc": "Tyto PhishShield exposes corporate staff to realistic, adaptive phishing attack simulations, coupled with instant interactive feedback, gamified XP progression, and Microsoft Outlook add-in integrations.",
     "gLink": "https://github.com/COS301-SE-2026/Tyto-PhishShield",
-    "email": "",
+    "email": "cos301.fiveguys@gmail.com",
     "tags": [
       "Cybersecurity",
       "Phishing Simulation",
@@ -806,7 +840,7 @@
     ]
   },
   {
-    "no": 26,
+    "no": 25,
     "pName": "UMTAS",
     "teamName": "Team Vigil",
     "projectWebsite": "https://capstone-vigil.dns.net.za/",
@@ -814,7 +848,7 @@
     "shortDesc": "A university management and timetabling automation system utilizing Google OR-Tools optimization solvers to create conflict-free, student-preference-driven schedules.",
     "longDesc": "UMTAS automates complex university venue allocations and timetable generation using constraint optimization algorithms. It features PDF schedule ingestion, real-time analytics, and can scale up to 20,000 concurrent students.",
     "gLink": "https://github.com/COS301-SE-2026/UMTAS",
-    "email": "",
+    "email": "vigil.cs2025@gmail.com",
     "tags": [
       "Constraint Optimization",
       "Timetabling",
@@ -826,7 +860,7 @@
     ]
   },
   {
-    "no": 27,
+    "no": 26,
     "pName": "Uni Textbook Marketplace",
     "teamName": "NexusDev",
     "projectWebsite": "https://nexusdev-frontend.whitesand-df72b78b.southafricanorth.azurecontainerapps.io/",
@@ -846,7 +880,7 @@
     ]
   },
   {
-    "no": 28,
+    "no": 27,
     "pName": "UniTrade",
     "teamName": "DevNexus",
     "projectWebsite": "https://ca-frontend-staging.calmtree-ce65e53e.southafricanorth.azurecontainerapps.io/",
@@ -867,30 +901,10 @@
     ]
   },
   {
-    "no": 29,
-    "pName": "Vantage Point",
-    "teamName": "The F.R.O.S.N Team",
-    "projectWebsite": "https://16.28.28.249/",
-    "mentorOrg": "epi",
-    "shortDesc": "A spatial intelligence platform for competitive esports athletes that transforms in-game 3D coordinate telemetry into actionable positioning and tactical analytics.",
-    "longDesc": "Moving beyond basic K/D ratios, Vantage Point extracts raw match coordinates to visualize positioning mistakes, calculate crossfire vulnerabilities, and model winning strategies against top-tier competitive play.",
-    "gLink": "https://github.com/COS301-SE-2026/Vantage-Point",
-    "email": "",
-    "tags": [
-      "Esports Analytics",
-      "Spatial Intelligence",
-      "3D Coordinate Tracking",
-      "Python",
-      "FastAPI",
-      "React",
-      "AWS"
-    ]
-  },
-  {
-    "no": 30,
+    "no": 28,
     "pName": "V.A.P.O.R.",
     "teamName": "Kilimanjaro StoneCap",
-    "projectWebsite": "#",
+    "projectWebsite": "https://d25bouomowr0it.cloudfront.net/",
     "mentorOrg": "fuseit",
     "shortDesc": "A vehicle analytics platform transforming raw fleet telemetry into proactive safety intelligence, predictive maintenance alerts, and driver behavior modeling.",
     "longDesc": "V.A.P.O.R. monitors fleet sensor diagnostics, detects anomalous vehicle operations in real-time, calculates driver safety scores, and automates scheduled servicing reminders to optimize commercial fleet logistics.",
@@ -906,26 +920,6 @@
       "AWS"
     ]
   },
-  {
-    "no": 31,
-    "pName": "Veritas Lab",
-    "teamName": "DeltaTech",
-    "projectWebsite": "https://veritaslab.app",
-    "mentorOrg": "naked",
-    "shortDesc": "An advanced digital media forensic analysis platform to detect synthetic media, deepfakes, manipulated documents, and misinformation for analysts and investigators.",
-    "longDesc": "Veritas Lab equips investigative journalists and fraud analysts with computer vision and forensic analysis tools to verify digital evidence, flag synthetic image alterations, and validate authentic media claims.",
-    "gLink": "https://github.com/COS301-SE-2026/Veritas-Lab",
-    "email": "support.deltatech@gmail.com",
-    "tags": [
-      "Deepfake Detection",
-      "Digital Forensics",
-      "Media Verification",
-      "Computer Vision",
-      "Python",
-      "Next.js",
-      "React"
-    ]
-  }
 ];
 
 		// **********
@@ -953,7 +947,7 @@
 		var stands = $("#tempstand");
 
 		var projects = projects.sort(
-			() => Math.random() - 0.5
+//			() => Math.random() - 0.5
 		);
 
 		for (var i = 0; i < projects.length; i++) {
@@ -1007,10 +1001,16 @@
 			template.find(".client_org").attr("title", cName);
 			template.find(".client_org").html("Product Owner: " + cName);
 
-			var clientImgExt = (projects[i].mentorOrg === 'tyto' || projects[i].mentorOrg === 'bbd' || projects[i].mentorOrg === 'comotion') ? '.svg' : '.png';
+			var clientImgExt = (projects[i].mentorOrg === 'tyto' || projects[i].mentorOrg === 'comotion') ? '.svg' : '.png';
 			template.find(".client").attr("src", "images/clients/" + projects[i].mentorOrg + clientImgExt);
 
 			$("#main").append(template.html());
+
+      stands.find(".team").html(projects[i].teamName);
+			stands.find(".project").html(projects[i].pName);
+			stands.find(".standNum").html(projects[i].no);
+			stands.find(".team").attr('onclick', 'openView(' + projects[i].no + ')');
+			$("#stands").append("<tr>" + stands.html() + "</tr>");
 		}
 
 		$("a").on("click", function (event) {
