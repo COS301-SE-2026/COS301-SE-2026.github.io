@@ -1,0 +1,15 @@
+index.html
+  h_d18f70f756186a 181,975,984-986,989,995-1002,1004,1006-1014,1016-1020,1041,1043-1046,1054,1063-1068
+  h_d18f70f756186a 1027,1034-1035,1037-1038,1049
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "46aa114e33903742c40391d42c2f90668a0f8328",
+  "prompts": {},
+  "humans": {
+    "h_d18f70f756186a": {
+      "author": "AvinashSingh786 <tashan.avi@gmail.com>"
+    }
+  }
+}
