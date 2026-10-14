@@ -293,4 +293,39 @@
 					$main[0]._poptrox.windowMargin = 50;
 				});
 
+				
+
+})(jQuery);
+
+// Add this after your existing Poptrox initialization
+(function($) {
+    // Wait for document ready
+    $(document).ready(function() {
+        // Handle caption scrolling
+        $('.poptrox-popup .caption').each(function() {
+            var caption = $(this)[0]; // Get DOM element
+            
+            // Touch start handler
+            caption.addEventListener('touchstart', function(e) {
+                this.allowUp = (this.scrollTop > 0);
+                this.allowDown = (this.scrollTop < this.scrollHeight - this.clientHeight);
+                this.prevTop = null;
+                this.prevBot = null;
+                this.lastY = e.touches[0].clientY;
+            });
+
+            // Touch move handler
+            caption.addEventListener('touchmove', function(e) {
+                var up = (e.touches[0].clientY > this.lastY);
+                var down = !up;
+                this.lastY = e.touches[0].clientY;
+
+                if ((up && this.allowUp) || (down && this.allowDown)) {
+                    e.stopPropagation();
+                } else {
+                    e.preventDefault();
+                }
+            }, { passive: false });
+        });
+    });
 })(jQuery);
