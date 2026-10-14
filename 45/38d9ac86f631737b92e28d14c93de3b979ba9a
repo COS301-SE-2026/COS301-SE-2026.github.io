@@ -1,0 +1,30 @@
+index.html
+  h_d18f70f756186a 43-54,106
+assets/js/main.js
+  h_d18f70f756186a 296-297,299-331
+assets/sass/components/_poptrox-popup.scss
+  s_db93eec02246b3::t_62f2c686c7cc60 16,18,80,87
+assets/css/main.css
+  s_db93eec02246b3::t_62f2c686c7cc60 1321,1324,1400,1408
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "4538d9ac86f631737b92e28d14c93de3b979ba9a",
+  "prompts": {},
+  "humans": {
+    "h_d18f70f756186a": {
+      "author": "AvinashSingh786 <tashan.avi@gmail.com>"
+    }
+  },
+  "sessions": {
+    "s_db93eec02246b3": {
+      "agent_id": {
+        "tool": "github-copilot-cli",
+        "id": "b497dbaf-7349-4b4f-b624-5ce08c0e0a50",
+        "model": "unknown"
+      },
+      "human_author": "AvinashSingh786 <tashan.avi@gmail.com>"
+    }
+  }
+}
