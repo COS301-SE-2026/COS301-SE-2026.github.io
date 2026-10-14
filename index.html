@@ -178,7 +178,7 @@
 			<img src="images/hall.png" alt="hall layout" class="img-responsive hall center">
 		</section>
 
-<section class="panel active" id="sponsor">
+<section class="panel " id="sponsor">
 			<h1>Sponsor's</h1>
 			<h2 class="center">We would like to thank our Sponsors for this years prizes. Thank you for your continued
 				support.</h2>
@@ -972,6 +972,7 @@
 			"up": "University of Pretoria"
 		};
 
+		
 		var template = $("#template");
 		var stands = $("#tempstand");
 
@@ -980,66 +981,77 @@
 		);
 
 		for (var i = 0; i < projects.length; i++) {
+			// Filter out projects that did not make it to project day
+			if (projects[i].enabled === false)
+				continue;
 
 			template.find(".name").html(projects[i].pName);
+			template.find(".logo_link").attr("id", projects[i].no);
 
 			template.find(".team").html(projects[i].teamName);
 
 			template.find(".description").html(projects[i].longDesc);
 
-			template.find(".logo").attr("src", "images/fulls/transparent_logos/" + projects[i].no + ".png");
-			template.find(".logo_link").attr("href", "images/fulls/logos/" + projects[i].no + ".png");
-
-			template.find(".fa-github").attr("href", projects[i].gLink);
-
-			if (projects[i].email && projects[i].email.trim() !== "") {
-				template.find(".fa-envelope").attr("href", "mailto:" + projects[i].email);
-				template.find(".fa-envelope").removeAttr("disabled");
+			//if(imageExists("/images/fulls/transparent_logos/"+projects[i].no+".png")) {
+			template.find(".logo").attr("src", "./images/fulls/transparent_logos/" + projects[i].no + ".png");
+			//}
+			/*else if(imageExists("/images/fulls/transparent_logos/"+projects[i].no+".jpg")) {
+					template.find(".logo").attr("src", "/images/fulls/transparent_logos/"+projects[i].no+".jpg");
+			} 
+			else if(imageExists("/images/fulls/logos/"+projects[i].no+".png")) {
+					template.find(".logo").attr("src", "/images/fulls/logos/"+projects[i].no+".png");
 			} else {
-				template.find(".fa-envelope").attr("href", "#");
-				template.find(".fa-envelope").attr("disabled", "disabled");
+				template.find(".logo").attr("src", "/images/fulls/logos/"+projects[i].no+".jpg");
 			}
+			*/
+			//if(imageExists("/images/team_photos/"+projects[i].no+".png"))
+			//	template.find(".logo_link").attr("href", "/images/team_photos/"+projects[i].no+".png");
+			//else if(imageExists("/images/team_photos/"+projects[i].no+".jpg")) {
+			template.find(".logo_link").attr("href", "./images/team_photos/" + projects[i].no + ".png");
+			//} else {
+			//	template.find(".logo_link").attr("href", "/images/team_photos/"+projects[i].no+".jpeg");
+			//}
 
-			if (projects[i].projectWebsite && projects[i].projectWebsite !== "#" && projects[i].projectWebsite.trim() !== "") {
+
+			template.find(".fa-github").attr("href", projects[i].gLink);// + projects[i].name.replaceAll(" ", "-"));
+
+			template.find(".fa-envelope").attr("href", "mailto:" + projects[i].email);
+
+			if (projects[i].projectWebsite !== "#") {
 				template.find(".fa-globe-africa").attr("href", projects[i].projectWebsite);
 				template.find(".fa-globe-africa").removeAttr("disabled");
 			} else {
-				template.find(".fa-globe-africa").attr("href", "#");
 				template.find(".fa-globe-africa").attr("disabled", "disabled");
 			}
 
-			if (projects[i].video && projects[i].video !== "#" && projects[i].video.trim() !== "") {
+			if (projects[i].video && projects[i].video !== "#") {
 				template.find(".fa-youtube").attr("href", projects[i].video);
 				template.find(".fa-youtube").removeAttr("disabled");
 			} else {
-				template.find(".fa-youtube").attr("href", "#");
 				template.find(".fa-youtube").attr("disabled", "disabled");
 			}
 
-			var chips = "";
-			if (!Array.isArray(projects[i].tags)) {
+			var chips = ""
+			if (!Array.isArray(projects[i].tags))
 				chips = projects[i].tags.split(',').map(item => `<p class='chip-item'>${item.trim()}</p>`).join("");
-			} else {
-				chips = projects[i].tags.map(item => `<p class='chip-item'>${item.trim()}</p>`).join("");
-			}
+			else
+				chips = projects[i].tags.map(item => `<p class='chip-item'>${item.trim()}</p>`).join("")
+
 
 			template.find(".chips").html(chips);
 
-			var cName = clientNames[projects[i].mentorOrg] || projects[i].mentorOrg;
-			template.find(".client").attr("alt", cName);
-			template.find(".client_org").attr("title", cName);
-			template.find(".client_org").html("Product Owner: " + cName);
-
-			var clientImgExt = (projects[i].mentorOrg === 'tyto' || projects[i].mentorOrg === 'comotion') ? '.svg' : '.png';
-			template.find(".client").attr("src", "images/clients/" + projects[i].mentorOrg + clientImgExt);
-
+			template.find(".client").attr("alt", clientNames[[i].mentorOrg]);
+			template.find(".client_org").attr("title", clientNames[projects[i].mentorOrg]);
+			template.find(".client_org").html("Product Owner: " + clientNames[projects[i].mentorOrg]);
+			template.find(".client").attr("src", "./images/clients/" + projects[i].mentorOrg + ".png");
 			$("#main").append(template.html());
 
-      stands.find(".team").html(projects[i].teamName);
+			stands.find(".team").html(projects[i].teamName);
 			stands.find(".project").html(projects[i].pName);
 			stands.find(".standNum").html(projects[i].no);
 			stands.find(".team").attr('onclick', 'openView(' + projects[i].no + ')');
 			$("#stands").append("<tr>" + stands.html() + "</tr>");
+
 		}
 
 		$("a").on("click", function (event) {
@@ -1047,6 +1059,12 @@
 				event.preventDefault();
 			}
 		});
+
+		function openView(x) {
+			$("#" + x).click();
+		}
+
+
 
 	</script>
 
