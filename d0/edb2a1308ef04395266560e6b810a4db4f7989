@@ -1,0 +1,14 @@
+index.html
+  h_d18f70f756186a 755
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "d0edb2a1308ef04395266560e6b810a4db4f7989",
+  "prompts": {},
+  "humans": {
+    "h_d18f70f756186a": {
+      "author": "AvinashSingh786 <tashan.avi@gmail.com>"
+    }
+  }
+}
