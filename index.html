@@ -52,6 +52,36 @@
       overflow-y: auto;
       overflow-x: hidden; 
     }
+
+    
+    .pull-right {
+      float: right;
+      position: absolute;
+      margin: 10px;
+      bottom: 0;
+      right: 0;
+      background-color: #fff !important;
+    }
+
+    .client_logo {
+      max-height: 70px;
+      max-width: 70px;
+      object-fit: contain;
+      margin-top: 10px;
+      padding: 2px;
+    }
+
+    .stand {
+      background-color: #fff !important;
+      color: black;
+      font-weight: bolder;
+      font-size: larger;
+      padding: 2px !important;
+      float: left;
+      text-align: center;
+      margin: 0;
+    }
+
 	</style>
 
 </head>
@@ -79,7 +109,7 @@
 		<div id="template" style="display: none">
 			<article class="thumb">
 				<div class="owner"><br /><br />
-					<h2 data-toggle="tooltip" data-placement="left" title="" class="client_org">Product Owner: </h2>
+					<h2 data-toggle="tooltip" data-placement="left" title="" class="client_org">Client: </h2>
 					<img src="#" alt="#" class="client" />
 				</div>
 				<a href="#" class="image logo_link">
@@ -89,11 +119,15 @@
 				
 				<br />
 				<h2> <span class="name"></span> <br />
-					By <span class="team"></span></h2>
+					By <span class="team"></span>
+         
+        </h2>
+         
 					<p class="chips"></p>
 				<p class="description">
 				</p>
 				<ul class="icons center margin-fix">
+          <li class="stand">#<span class="standNum"></span></li>
 					<li><a href="#" target="_blank" class="icon brands fa-github" data-toggle="tooltip"
 							data-placement="left" title="GitHub Repository"><span class="label">GitHub
 								Repository</span></a></li>
@@ -105,6 +139,7 @@
 					</li>
 
 				</ul>
+        <img src="" alt="" class="client_logo pull-right" width="70"  />
 			</article>
 
 		</div>
@@ -727,6 +762,25 @@
       "Python",
       "FastAPI"
     ]
+  },{
+    "no": 19,
+    "pName": "UniTrade",
+    "teamName": "DevNexus",
+    "projectWebsite": "https://www.myunitrade.co.za/",
+    "mentorOrg": "agb",
+    "shortDesc": "A trusted peer-to-peer marketplace enabling South African university students to safely buy and sell second-hand textbooks and academic equipment.",
+    "longDesc": "UniTrade provides a verified student-only commerce network with escrow-style transaction guarantees, campus meetup tracking, dispute management, and payment gateway integration.",
+    "gLink": "https://github.com/COS301-SE-2026/UniTrade",
+    "email": "devnexus28@gmail.com",
+    "tags": [
+      "Marketplace",
+      "EdTech",
+      "P2P Commerce",
+      "C#",
+      ".NET",
+      "React",
+      "Azure Container Apps",
+    ]
   },
   {
     "no": 19,
@@ -890,23 +944,23 @@
     ]
   },
   {
-    "no": 27,
-    "pName": "UniTrade",
-    "teamName": "DevNexus",
-    "projectWebsite": "https://www.myunitrade.co.za/",
-    "mentorOrg": "agb",
-    "shortDesc": "A trusted peer-to-peer marketplace enabling South African university students to safely buy and sell second-hand textbooks and academic equipment.",
-    "longDesc": "UniTrade provides a verified student-only commerce network with escrow-style transaction guarantees, campus meetup tracking, dispute management, and payment gateway integration.",
-    "gLink": "https://github.com/COS301-SE-2026/UniTrade",
-    "email": "devnexus28@gmail.com",
+    "no": 19,
+    "pName": "Savanna Sentinel",
+    "teamName": "Sigill",
+    "projectWebsite": "https://savannasentinel.co.za/",
+    "mentorOrg": "epi",
+    "shortDesc": "An anti-poaching intelligence and wildlife conservation platform helping game reserve rangers detect poaching hotspots, plan patrols, and log observations offline.",
+    "longDesc": "Savanna Sentinel delivers GIS mapping, spatial predictive hotspot modeling, offline field data sync, and emergency incident dispatch tools to safeguard endangered wildlife across African conservation reserves.",
+    "gLink": "https://github.com/COS301-SE-2026/Savanna-Sentinel",
+    "email": "sigill.team@gmail.com",
     "tags": [
-      "Marketplace",
-      "EdTech",
-      "P2P Commerce",
-      "C#",
-      ".NET",
-      "React",
-      "Azure Container Apps",
+      "Conservation Tech",
+      "Anti-Poaching",
+      "GIS Mapping",
+      "Offline Sync",
+      "TypeScript",
+      "React PWA",
+      "Python Celery"
     ]
   },
   {
@@ -976,7 +1030,7 @@
 		var stands = $("#tempstand");
 
 		var projects = projects.sort(
-			() => Math.random() - 0.5
+			// () => Math.random() - 0.5
 		);
 
 		for (var i = 0; i < projects.length; i++) {
@@ -1011,7 +1065,6 @@
 			//	template.find(".logo_link").attr("href", "/images/team_photos/"+projects[i].no+".jpeg");
 			//}
 
-
 			template.find(".fa-github").attr("href", projects[i].gLink);// + projects[i].name.replaceAll(" ", "-"));
 
 			template.find(".fa-envelope").attr("href", "mailto:" + projects[i].email);
@@ -1043,6 +1096,8 @@
 			template.find(".client_org").attr("title", clientNames[projects[i].mentorOrg]);
 			template.find(".client_org").html("Product Owner: " + clientNames[projects[i].mentorOrg]);
 			template.find(".client").attr("src", "./images/clients/" + projects[i].mentorOrg + ".png");
+      template.find(".client_logo").attr("src", "./images/clients/" + projects[i].mentorOrg + ".png");
+      template.find(".standNum").html(projects[i].no);
 			$("#main").append(template.html());
 
 			stands.find(".team").html(projects[i].teamName);
