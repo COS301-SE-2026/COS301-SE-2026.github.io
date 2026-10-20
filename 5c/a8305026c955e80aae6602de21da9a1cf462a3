@@ -1,0 +1,17 @@
+index.html
+  h_d18f70f756186a 55-84,112,123,125,130,142,765-783,947-955,957-963,1033,1099-1100
+  h_d18f70f756186a 122,124
+assets/sass/main.scss
+  h_d18f70f756186a 11
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "5ca8305026c955e80aae6602de21da9a1cf462a3",
+  "prompts": {},
+  "humans": {
+    "h_d18f70f756186a": {
+      "author": "AvinashSingh786 <tashan.avi@gmail.com>"
+    }
+  }
+}
